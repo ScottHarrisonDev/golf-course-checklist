@@ -173,6 +173,14 @@ const counts = filterCounts(courses.map(() => false));
     gap: var(--space-3);
   }
 
+  /*
+   * When focus moves to a card's link or checkbox, keep it below the sticky filters
+   * (WCAG 2.4.11). 8.5rem clears the bar even when it wraps to two rows at 320px.
+   */
+  .course-list__cards :is(a, input) {
+    scroll-margin-top: 8.5rem;
+  }
+
   .card {
     display: grid;
     gap: var(--space-3);
