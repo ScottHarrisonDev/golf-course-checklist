@@ -1,14 +1,18 @@
 ---
 name: task
-description: Work on a Golf Course Checklist plan task end to end, from reading the issue to opening a pull request. Use when the user types /task <n>, where issue #n is task T0n.
+description: Work on a Golf Course Checklist GitHub issue end to end, from reading the issue to opening a pull request. Use when the user types /task <n>, where n is the issue number.
 argument-hint: <issue number>
 ---
 
 # /task $ARGUMENTS
 
-Work on task T0$ARGUMENTS (GitHub issue #$ARGUMENTS) in
-ScottHarrisonDev/golf-course-checklist. For two-digit numbers the task is T$ARGUMENTS
-(e.g. issue #10 = T10).
+Work on GitHub issue #$ARGUMENTS in ScottHarrisonDev/golf-course-checklist.
+
+- **Issues #1–#11 are plan tasks:** issue #n is task T0n (#10 = T10, #11 = T11), with a
+  section in `docs/plan-v1.md` section 5.
+- **Issues #12 and later are not plan tasks.** They have no T-number and no section in
+  section 5; the issue itself is complete (goal, owned files, acceptance criteria). Some
+  are listed in `docs/plan-v1.md` section 8.
 
 ## 1. Sync with the latest `main`
 
@@ -27,7 +31,8 @@ resuming a task), don't rebase or reset: stop and tell the user.
 
 1. `CLAUDE.md`
 2. `docs/requirements-v1.md`
-3. The task's section in `docs/plan-v1.md` (section 5), plus sections 1, 2 and 6.
+3. `docs/plan-v1.md` sections 1, 2 and 6, plus the task's section in section 5 for plan
+   tasks, or section 8 if the issue is listed there.
 4. The issue: `gh issue view $ARGUMENTS`. The issue is the source of truth for
    **Owns**, the work and the acceptance criteria.
 
@@ -62,7 +67,9 @@ For UI tasks, run the site and take a screenshot at 375px wide.
 
 ## 6. Ship
 
-1. Create a branch `task/T0$ARGUMENTS-<short-slug>` (e.g. `task/T06-course-list`).
+1. Create a branch: `task/T0$ARGUMENTS-<short-slug>` for plan tasks (e.g.
+   `task/T06-course-list`), or `task/$ARGUMENTS-<short-slug>` for later issues (e.g.
+   `task/28-map-ireland`).
 2. Make small commits with clear messages.
 3. `git push -u origin <branch>`
 4. `gh pr create` against `main` with a description that:

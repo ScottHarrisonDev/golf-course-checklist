@@ -1,9 +1,12 @@
 # Golf Course Checklist — v1 Requirements
 
 Status: **Agreed** (21 November 2026). Changes to v1 scope should be made here first.
+Amended 21 November 2026 after a first look at the live site, before tagging v1.0.0:
+whole island of Ireland on the map, no roads, no France, and a stronger pinch zoom
+(issues 28 and 29).
 
 v1 is a deliberately small MVP: a phone-first page showing the courses I want to play on
-a zoomable illustrated UK map and in a list, where I can tick off courses I've played and
+a zoomable illustrated map of the UK and Ireland and in a list, where I can tick off courses I've played and
 see my progress. Everything not listed here is out of scope.
 
 ---
@@ -16,7 +19,8 @@ see my progress. Everything not listed here is out of scope.
 | Layout | Two tabs, **Map** and **List**, in a **tab bar at the bottom of the screen**. Opens on Map every visit. | Each view gets the whole phone screen; tabs are within easy thumb reach. |
 | Visual design | **Option C, "Fairway Modern"**: navy header, flat greens, rounded cards and pill controls. See section 3. | Chosen from three style options. |
 | Font | **Manrope**, loaded from Google Fonts. | Chosen with the visual design. |
-| Map coverage | The whole UK. | Room for courses anywhere, not just Kent. |
+| Map coverage | Great Britain and the **whole island of Ireland**, with the Republic of Ireland drawn the same way as the UK. No other countries (no France). Courses can be anywhere on the map. | Room for courses anywhere in the UK and Ireland, not just Kent. |
+| Pinch zoom | **Amplified about 2×**, so one comfortable pinch goes from the opening view to the whole map. | A one-to-one pinch needed several pinches to zoom out. |
 | Map technology | **Leaflet** with our own illustrated SVG as the base layer. No tiles, no API key. | Pinch/drag zoom, zoom buttons and keyboard support are well tested in Leaflet; hand-building them is fiddly. Adds one runtime dependency (~40 KB). |
 | Nearby courses | Handled by zooming in. No clustering in v1. | Kept simple; zoom was chosen over grouping. |
 | Played data | Played / not played only. No dates or notes. | MVP. |
@@ -58,17 +62,23 @@ Each criterion should be checkable by hand or by a test.
 
 ### F2. Map
 
-- [ ] The base layer is our illustrated SVG of the UK. No map tiles, no API key, and no
-      map requests to third-party servers at runtime.
-- [ ] The artwork looks deliberate at both whole-UK zoom and county zoom (e.g. Kent):
+- [ ] The base layer is our illustrated SVG of Great Britain and the whole island of
+      Ireland. No map tiles, no API key, and no map requests to third-party servers at
+      runtime.
+- [ ] The Republic of Ireland is drawn the same way as the UK (county patchwork, coast,
+      boundaries). The map shows no roads and no other countries (no France).
+- [ ] The artwork looks deliberate at both whole-map zoom and county zoom (e.g. Kent):
       coastline plus enough detail (such as county boundaries) to orient yourself.
 - [ ] On first load the map is zoomed to fit all courses, with padding.
 - [ ] Touch: pinch to zoom, drag to pan. Desktop: scroll wheel / trackpad to zoom, drag
       to pan.
+- [ ] Pinch zoom is amplified (about 2×): on a phone, one comfortable pinch zooms from
+      the opening view out to the whole map. The + / − buttons, keyboard and mouse wheel
+      are not amplified.
 - [ ] **+ / −** zoom buttons are always visible (single-tap alternative to pinch,
       WCAG 2.5.1 and 2.5.7).
 - [ ] Keyboard: the map can be focused; arrow keys pan and + / − zoom.
-- [ ] You can't zoom out beyond the whole UK or drag the UK off-screen.
+- [ ] You can't zoom out beyond the whole map or drag the map off-screen.
 - [ ] The map position and zoom are **not** remembered between visits.
 - [ ] One pin per course, at its lat/lng.
 - [ ] Played and unplayed pins differ by **icon as well as colour** (played: green
@@ -132,7 +142,8 @@ Each criterion should be checkable by hand or by a test.
       optional `url`.
 - [ ] The data is validated at build time using Astro's built-in content collections
       (no extra dependency): required fields present, ids unique, holes is 9 or 18,
-      lat/lng inside the UK. Invalid data fails the build with a clear message.
+      lat/lng inside the map (Great Britain and Ireland). Invalid data fails the build
+      with a clear message.
 - [ ] Adding a course means editing the JSON file only.
 
 ### F8. Build and deploy
@@ -159,7 +170,7 @@ Each criterion should be checkable by hand or by a test.
 | Chip | `#E8EFEB` | Chips, Played row in the card |
 | Border | `#B8C7BF` / `#E1E8E4` | Unselected filter outlines / dividers |
 | Map land | `#DDEFD5`, fields `#CBE6C0`, woods `#B9DCAE` | Map artwork |
-| Map water | `#A6D8EE`, rivers `#8CCDEA`; roads `#FFFFFF` | Map artwork |
+| Map water | `#A6D8EE`, rivers `#8CCDEA` | Map artwork (no roads) |
 
 - **Type:** Manrope (Google Fonts), weights 500–800. Headings 800, body 600.
 - **Shape:** radius 12px for buttons, 16px for cards and rows, 24px for the bottom
