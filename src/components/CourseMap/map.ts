@@ -22,9 +22,27 @@ const FIT_PADDING: L.PointTuple = [48, 48];
 /** Zoom used when there is only one course to fit (roughly county level). */
 const SINGLE_COURSE_ZOOM = 9;
 
+/**
+ * How far past each edge of the artwork you can drag, as a fraction of the map's size.
+ * The space beyond the artwork is plain sea (the container's background).
+ */
+const PAN_MARGIN = 0.12;
+
+/**
+ * Sea kept around the whole map when zoomed right out, as a fraction of the map's size
+ * on each side. Smaller than `PAN_MARGIN`, so there is still room to drag.
+ */
+const ZOOM_OUT_MARGIN = 0.06;
+
 const ARTWORK_BOUNDS = L.latLngBounds(
   MAP_BOUNDS.map(([lat, lng]) => L.latLng(lat, lng)) as [L.LatLng, L.LatLng],
 );
+
+/** Where the view can go: the artwork plus a margin of sea on every side. */
+const PAN_BOUNDS = ARTWORK_BOUNDS.pad(PAN_MARGIN);
+
+/** The whole map with a margin, as it should fit at the minimum zoom. */
+const ZOOM_OUT_BOUNDS = ARTWORK_BOUNDS.pad(ZOOM_OUT_MARGIN);
 
 function prefersReducedMotion(): boolean {
   return window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
@@ -85,7 +103,7 @@ export function initCourseMap(container: HTMLElement, courses: readonly Course[]
   const map = L.map(container, {
     zoomControl: false,
     attributionControl: false,
-    maxBounds: ARTWORK_BOUNDS,
+    maxBounds: PAN_BOUNDS,
     maxBoundsViscosity: 1,
     maxZoom: MAX_ZOOM,
     zoomSnap: 0.25,
@@ -104,11 +122,11 @@ export function initCourseMap(container: HTMLElement, courses: readonly Course[]
   L.imageOverlay(MAP_ARTWORK_URL, ARTWORK_BOUNDS, { alt: '', interactive: false }).addTo(map);
   createZoomControl().addTo(map);
 
-  // Smallest zoom that still fills the view with the UK, so it can't be lost.
+  // Smallest zoom: the whole map fits in the view with a margin of sea around it.
   const updateMinZoom = () => {
     const size = map.getSize();
     if (size.x === 0 || size.y === 0) return;
-    map.setMinZoom(map.getBoundsZoom(ARTWORK_BOUNDS, false));
+    map.setMinZoom(map.getBoundsZoom(ZOOM_OUT_BOUNDS, false));
   };
 
   const bounds = coursesBounds(courses);
