@@ -3,7 +3,10 @@
 Status: **Agreed** (21 November 2026). Changes to v1 scope should be made here first.
 Amended 21 November 2026 after a first look at the live site, before tagging v1.0.0:
 whole island of Ireland on the map, no roads, no France, and a stronger pinch zoom
-(issues 28 and 29).
+(issues 28 and 29). Amended again the same day: a county for each course shown on its
+card, county labels on the map, a much stronger pinch, and room to zoom and scroll past
+the map's edges (issues 33, 34 and 35). Clustering and multi-course venues are planned
+for v1.1 (`docs/requirements-v1.1.md`).
 
 v1 is a deliberately small MVP: a phone-first page showing the courses I want to play on
 a zoomable illustrated map of the UK and Ireland and in a list, where I can tick off courses I've played and
@@ -20,9 +23,11 @@ see my progress. Everything not listed here is out of scope.
 | Visual design | **Option C, "Fairway Modern"**: navy header, flat greens, rounded cards and pill controls. See section 3. | Chosen from three style options. |
 | Font | **Manrope**, loaded from Google Fonts. | Chosen with the visual design. |
 | Map coverage | Great Britain and the **whole island of Ireland**, with the Republic of Ireland drawn the same way as the UK. No other countries (no France). Courses can be anywhere on the map. | Room for courses anywhere in the UK and Ireland, not just Kent. |
-| Pinch zoom | **Amplified about 2×**, so one comfortable pinch goes from the opening view to the whole map. | A one-to-one pinch needed several pinches to zoom out. |
+| Pinch zoom | **Strongly amplified** (factor tuned on a real phone, roughly 3–4×), so one modest pinch goes from the opening view to the whole map. | A one-to-one pinch, and then a 2× pinch, both felt far too weak. |
+| Map edges | You can zoom out until the whole map fits with a margin, and drag a little past its edges. The space beyond the artwork is plain sea. | The map felt boxed in. |
+| Counties | Each course has a `county`, shown as an eyebrow on its card. County names are labelled on the map when there's room. | See which county a course is in at a glance. |
 | Map technology | **Leaflet** with our own illustrated SVG as the base layer. No tiles, no API key. | Pinch/drag zoom, zoom buttons and keyboard support are well tested in Leaflet; hand-building them is fiddly. Adds one runtime dependency (~40 KB). |
-| Nearby courses | Handled by zooming in. No clustering in v1. | Kept simple; zoom was chosen over grouping. |
+| Nearby courses | Handled by zooming in. No clustering in v1 (planned for v1.1). | Kept simple; zoom was chosen over grouping. |
 | Played data | Played / not played only. No dates or notes. | MVP. |
 | Storage | localStorage, keyed by course id, behind a small module. Per-browser by design. | No backend needed for v1. |
 | Keeping views in sync | Small shared store module; changes broadcast with a custom event. | No framework dependency. |
@@ -72,13 +77,20 @@ Each criterion should be checkable by hand or by a test.
 - [ ] On first load the map is zoomed to fit all courses, with padding.
 - [ ] Touch: pinch to zoom, drag to pan. Desktop: scroll wheel / trackpad to zoom, drag
       to pan.
-- [ ] Pinch zoom is amplified (about 2×): on a phone, one comfortable pinch zooms from
-      the opening view out to the whole map. The + / − buttons, keyboard and mouse wheel
-      are not amplified.
+- [ ] Pinch zoom is strongly amplified (roughly 3–4×, tuned on a real phone): one
+      modest pinch (fingers about 3× closer) zooms from the opening view out to the
+      whole map. The + / − buttons, keyboard and mouse wheel are not amplified.
 - [ ] **+ / −** zoom buttons are always visible (single-tap alternative to pinch,
       WCAG 2.5.1 and 2.5.7).
 - [ ] Keyboard: the map can be focused; arrow keys pan and + / − zoom.
-- [ ] You can't zoom out beyond the whole map or drag the map off-screen.
+- [ ] You can zoom out until the whole map fits in view with a margin, and drag a little
+      past each edge (about 10–15% of the map's size). The space beyond the artwork is
+      plain sea in the artwork's sea colour, with no visible seam. You can't drag the map
+      off-screen.
+- [ ] County names are labelled on the map in a subtle style (section 3). A label only
+      shows when the name fits comfortably inside its county at the current zoom, so
+      more appear as you zoom in. Labels are decorative (hidden from screen readers) and
+      never cover or block a pin.
 - [ ] The map position and zoom are **not** remembered between visits.
 - [ ] One pin per course, at its lat/lng.
 - [ ] Played and unplayed pins differ by **icon as well as colour** (played: green
@@ -93,9 +105,9 @@ Each criterion should be checkable by hand or by a test.
 ### F3. Course detail card
 
 - [ ] Tapping a pin, or pressing Enter on a focused pin, opens a card (a bottom sheet,
-      sitting above the tab bar) showing: course name, location, holes ("9 holes" /
-      "18 holes"), a website link (only if the course has a `url`) and a **Played**
-      checkbox.
+      sitting above the tab bar) showing: the county as a small eyebrow above the course
+      name (e.g. "KENT"), course name, location, holes ("9 holes" / "18 holes"), a
+      website link (only if the course has a `url`) and a **Played** checkbox.
 - [ ] The website link opens in a new tab, and says so to screen readers.
 - [ ] The card closes with a close button, the Escape key, or tapping the map elsewhere.
       Focus returns to the pin.
@@ -138,12 +150,13 @@ Each criterion should be checkable by hand or by a test.
 ### F7. Course data
 
 - [ ] Courses live in one static JSON file in the repository (`src/data/courses.json`),
-      with the shape `id`, `name`, `location`, `lat`, `lng`, `holes: 9 | 18`,
+      with the shape `id`, `name`, `location`, `county`, `lat`, `lng`, `holes: 9 | 18`,
       optional `url`.
 - [ ] The data is validated at build time using Astro's built-in content collections
       (no extra dependency): required fields present, ids unique, holes is 9 or 18,
-      lat/lng inside the map (Great Britain and Ireland). Invalid data fails the build
-      with a clear message.
+      lat/lng inside the map (Great Britain and Ireland), and `county` is one of the
+      county names in the map artwork (e.g. "Kent", "Greater London", "Dublin").
+      Invalid data fails the build with a clear message.
 - [ ] Adding a course means editing the JSON file only.
 
 ### F8. Build and deploy
@@ -180,8 +193,13 @@ Each criterion should be checkable by hand or by a test.
 - **Layout (phone):** navy header with title and progress summary at the top; the map
   or list fills the middle; a white tab bar at the bottom with an icon and label per
   tab. The course detail card is a white bottom sheet (24px top corners) above the tab
-  bar, with the course name, location, a holes chip, a Played checkbox row and a
-  website button.
+  bar, with the county eyebrow, course name, location, a holes chip, a Played checkbox
+  row and a website button.
+- **County eyebrow (card):** slate `#3C5566`, about 12px, weight 700, uppercase,
+  letter-spaced, directly above the course name.
+- **County labels (map):** slate `#3C5566`, about 11–12px, weight 600, uppercase,
+  letter-spaced, with a thin white halo so they read on any county colour. Subtle:
+  they should sit back behind the pins.
 - Every text/background pairing must still be checked for 4.5:1 contrast (3:1 for
   large text and UI parts) when implemented.
 

@@ -30,7 +30,8 @@ resuming a task), don't rebase or reset: stop and tell the user.
 ## 2. Read first
 
 1. `CLAUDE.md`
-2. `docs/requirements-v1.md`
+2. `docs/requirements-v1.md`, plus `docs/requirements-v1.1.md` if the issue is
+   labelled `v1.1`
 3. `docs/plan-v1.md` sections 1, 2 and 6, plus the task's section in section 5 for plan
    tasks, or section 8 if the issue is listed there.
 4. The issue: `gh issue view $ARGUMENTS`. The issue is the source of truth for
