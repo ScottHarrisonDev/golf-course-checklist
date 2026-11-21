@@ -271,6 +271,21 @@ const counts = filterCounts(courses.map(() => false));
     text-align: center;
     color: var(--color-text-muted);
   }
+
+  /*
+   * Short viewports (e.g. 400% zoom, landscape phones): the panel can be shorter than
+   * the filters, so let them scroll away with the list (WCAG 1.4.10). Focused controls
+   * then need no space kept clear above them. Kept last so it overrides the rules above.
+   */
+  @media (max-height: 32rem) {
+    .course-list__filters {
+      position: static;
+    }
+
+    .course-list__cards :is(a, input) {
+      scroll-margin-top: 0;
+    }
+  }
 </style>
 
 <script>
