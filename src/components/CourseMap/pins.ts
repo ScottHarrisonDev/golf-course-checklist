@@ -70,6 +70,43 @@ export function initPins(map: L.Map, root: HTMLElement, courses: readonly Course
   const pins = new Map<CourseId, Pin>();
   let openId: CourseId | null = null;
 
+  /**
+   * Pan just enough that a pin is fully in view: inside the map's edges, above the
+   * card when it's open, and clear of the zoom control. Used when a pin's card opens
+   * and when a pin gets keyboard focus, so the focus ring is never off-screen.
+   */
+  function keepPinVisible(pin: Pin): void {
+    const size = map.getSize();
+    if (size.x === 0 || size.y === 0) return;
+    const point = map.latLngToContainerPoint(pin.marker.getLatLng());
+    const reach = PIN_SIZE / 2 + PIN_MARGIN;
+    const card = cardEls && !cardEls.card.hidden ? cardEls.card : null;
+    const bottom = size.y - (card?.offsetHeight ?? 0);
+
+    let x = Math.min(Math.max(point.x, reach), size.x - reach);
+    let y = Math.min(Math.max(point.y, reach), Math.max(bottom - reach, reach));
+
+    // Keep clear of the zoom control: below it if there's room, otherwise to its left.
+    const zoom = root.querySelector<HTMLElement>('.course-map__zoom');
+    if (zoom) {
+      const mapBox = map.getContainer().getBoundingClientRect();
+      const box = zoom.getBoundingClientRect();
+      const left = box.left - mapBox.left;
+      const right = box.right - mapBox.left;
+      const top = box.top - mapBox.top;
+      const below = box.bottom - mapBox.top;
+      const overlaps = x + reach > left && x - reach < right && y + reach > top && y - reach < below;
+      if (overlaps) {
+        if (below + reach <= bottom - reach) y = below + reach;
+        else x = Math.max(left - reach, reach);
+      }
+    }
+
+    const dx = point.x - x;
+    const dy = point.y - y;
+    if (dx || dy) map.panBy([dx, dy], { animate: map.options.zoomAnimation ?? true });
+  }
+
   for (const course of courses) {
     const button = document.createElement('button');
     button.type = 'button';
@@ -97,7 +134,18 @@ export function initPins(map: L.Map, root: HTMLElement, courses: readonly Course
       else open(course.id);
     });
 
-    pins.set(course.id, { course, marker, button });
+    const pin: Pin = { course, marker, button };
+    pins.set(course.id, pin);
+
+    // Tabbing to a pin outside the visible map brings it into view (WCAG 2.4.11).
+    // The browser scrolls the map container to reveal the pin first; undo that (Leaflet
+    // would, but only later) so the zoom control is measured where it really is.
+    button.addEventListener('focus', () => {
+      const container = map.getContainer();
+      container.scrollLeft = 0;
+      container.scrollTop = 0;
+      keepPinVisible(pin);
+    });
   }
 
   if (!cardEls) return;
@@ -130,24 +178,6 @@ export function initPins(map: L.Map, root: HTMLElement, courses: readonly Course
       pin?.button.setAttribute('aria-expanded', 'true');
       pin?.marker.setZIndexOffset(1000);
     }
-  }
-
-  /** Pan just enough that the open pin isn't hidden behind the card. */
-  function keepPinVisible(pin: Pin): void {
-    const size = map.getSize();
-    if (size.x === 0 || size.y === 0) return;
-    const point = map.latLngToContainerPoint(pin.marker.getLatLng());
-    const cardTop = size.y - els.card.offsetHeight;
-    const lowest = cardTop - PIN_SIZE / 2 - PIN_MARGIN;
-    const highest = PIN_SIZE / 2 + PIN_MARGIN;
-    let dy = 0;
-    if (point.y > lowest) dy = point.y - Math.max(lowest, highest);
-    let dx = 0;
-    const left = PIN_SIZE / 2 + PIN_MARGIN;
-    const right = size.x - left;
-    if (point.x < left) dx = point.x - left;
-    else if (point.x > right) dx = point.x - right;
-    if (dx || dy) map.panBy([dx, dy], { animate: map.options.zoomAnimation ?? true });
   }
 
   function open(id: CourseId): void {
