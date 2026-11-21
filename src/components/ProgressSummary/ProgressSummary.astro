@@ -1,11 +1,13 @@
 ---
 /**
- * STUB (T02). T05 replaces the insides: "N of M played" plus a labelled <progress>,
- * updated in the browser with `onPlayedChange`.
+ * Progress summary (F5): "N of M played" plus a labelled <progress>, in the navy header.
+ * Receives all courses as `courses`.
  *
- * Contract: sits in the navy header. Receives all courses as `courses`.
+ * Server-rendered as if nothing is played; the island (`summary.ts`) then reads the
+ * store and updates the text and bar on every `onPlayedChange`.
  */
 import type { Course } from '../../lib/types';
+import { progressText, progressValues } from './progress';
 
 interface Props {
   courses: Course[];
@@ -13,27 +15,85 @@ interface Props {
 
 const { courses } = Astro.props;
 const total = courses.length;
+const text = progressText(0, total);
+const { value, max } = progressValues(0, total);
+const ids = JSON.stringify(courses.map((course) => course.id));
 ---
 
-<div class="progress-summary">
-  <p class="progress-summary__text">0 of {total} played</p>
-  <progress value="0" max={total} aria-label="Courses played">0 of {total}</progress>
+<div class="progress-summary" data-progress-summary data-course-ids={ids}>
+  <p class="progress-summary__text" id="progress-summary-text" data-progress-text>{text}</p>
+  <progress
+    class="progress-summary__bar"
+    value={value}
+    max={max}
+    aria-label="Courses played"
+    aria-describedby="progress-summary-text"
+    aria-valuetext={text}>{text}</progress
+  >
 </div>
 
 <style>
   .progress-summary {
     display: flex;
     flex-direction: column;
-    gap: var(--space-1);
+    gap: var(--space-2);
   }
 
   .progress-summary__text {
     margin: 0;
     font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
   }
 
-  progress {
+  /* Light green fill on a translucent white track (Option C). Reset the native look so
+     every browser draws the same bar. */
+  .progress-summary__bar {
+    appearance: none;
+    display: block;
     width: 100%;
-    accent-color: var(--color-progress);
+    height: 8px;
+    border: 0;
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+    background: rgb(255 255 255 / 0.2);
+    color: var(--color-progress);
+  }
+
+  /* The track colour comes from the element itself (above). */
+  .progress-summary__bar::-webkit-progress-bar {
+    background: transparent;
+  }
+
+  .progress-summary__bar::-webkit-progress-value {
+    background: var(--color-progress);
+    border-radius: var(--radius-pill);
+    transition: inline-size 200ms ease-out;
+  }
+
+  .progress-summary__bar::-moz-progress-bar {
+    background: var(--color-progress);
+    border-radius: var(--radius-pill);
+  }
+
+  /* The global reduced-motion reset doesn't reach this pseudo-element. */
+  @media (prefers-reduced-motion: reduce) {
+    .progress-summary__bar::-webkit-progress-value {
+      transition: none;
+    }
+  }
+
+  /* Windows High Contrast / forced colours: keep the bar visible. */
+  @media (forced-colors: active) {
+    .progress-summary__bar {
+      border: 1px solid CanvasText;
+    }
   }
 </style>
+
+<script>
+  import { initProgressSummary } from './summary';
+
+  for (const root of document.querySelectorAll<HTMLElement>('[data-progress-summary]')) {
+    initProgressSummary(root);
+  }
+</script>
