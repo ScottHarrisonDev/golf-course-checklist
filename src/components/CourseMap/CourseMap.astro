@@ -1,7 +1,10 @@
 ---
 /**
- * The Map tab: a Leaflet map with our illustrated UK artwork as its only layer
- * (T08). T09 adds the pins and the detail card.
+ * The Map tab: a Leaflet map with our illustrated UK artwork as its only layer (T08),
+ * one pin per course and the course detail card (T09).
+ *
+ * The card is a bottom sheet at the foot of the Map panel, so it sits just above the
+ * tab bar. It is rendered empty and hidden here; `pins.ts` fills it in for the open pin.
  *
  * Fills the Map tab panel. The courses come from the page's embedded JSON in the
  * browser; `courses` here is only used for the server-rendered fallback text.
@@ -33,6 +36,50 @@ const { courses } = Astro.props;
       </p>
     </noscript>
   </div>
+
+  <section
+    class="course-card"
+    id="course-card"
+    data-card
+    role="dialog"
+    aria-labelledby="course-card-name"
+    hidden
+  >
+    <div class="course-card__head">
+      <h3 class="course-card__name" id="course-card-name" tabindex="-1" data-card-name></h3>
+      <button type="button" class="course-card__close" data-card-close aria-label="Close">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+          <path
+            d="M6 6l12 12M18 6 6 18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+            stroke-linecap="round"></path>
+        </svg>
+      </button>
+    </div>
+    <p class="course-card__location" data-card-location></p>
+    <div class="course-card__details">
+      <span class="course-card__chip" data-card-holes></span>
+      <a class="course-card__link" data-card-link target="_blank" rel="noopener noreferrer" hidden>
+        Website
+        <span class="visually-hidden"> for <span data-card-link-name></span> (opens in a new tab)</span>
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
+          <path
+            d="M6 3h7v7M13 3 4 12"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </a>
+    </div>
+    <label class="course-card__played">
+      <input type="checkbox" data-card-played />
+      <span>Played</span>
+    </label>
+  </section>
 </div>
 
 <style>
@@ -122,15 +169,204 @@ const { courses } = Astro.props;
   .course-map :global(.course-map__zoom-button[aria-disabled='true']:hover) {
     background: none;
   }
+
+  /* Pins: a 44px button holding the 32px played / unplayed icon. */
+
+  .course-map :global(.course-map__pin-marker) {
+    background: none;
+    border: 0;
+  }
+
+  .course-map :global(.course-map__pin) {
+    display: grid;
+    place-items: center;
+    width: var(--target-min);
+    height: var(--target-min);
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .course-map :global(.course-map__pin-icon) {
+    border-radius: 50%;
+    box-shadow: var(--shadow-float);
+    transition: transform 150ms ease;
+  }
+
+  .course-map :global(.course-map__pin:hover .course-map__pin-icon) {
+    transform: scale(1.1);
+  }
+
+  .course-map :global(.course-map__pin:focus-visible) {
+    outline: var(--focus-ring-width) solid var(--focus-ring-color);
+    outline-offset: 0;
+  }
+
+  /* The open pin: a yellow ring, edged in navy so it stands out on the map. */
+  .course-map :global(.course-map__pin[aria-expanded='true'] .course-map__pin-icon) {
+    transform: scale(1.1);
+    box-shadow:
+      0 0 0 3px var(--color-flag),
+      0 0 0 4.5px var(--color-navy),
+      var(--shadow-float);
+  }
+
+  @media (forced-colors: active) {
+    .course-map :global(.course-map__pin[aria-expanded='true'] .course-map__pin-icon) {
+      outline: 3px solid Highlight;
+      outline-offset: 2px;
+    }
+  }
+
+  /* Detail card: a bottom sheet over the foot of the map, just above the tab bar. */
+
+  .course-card {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000; /* above Leaflet's panes and controls */
+    max-width: 32rem;
+    max-height: calc(100% - var(--space-6));
+    overflow-y: auto;
+    margin: 0 auto;
+    padding: var(--space-4) var(--space-4) var(--space-5);
+    padding-left: max(var(--space-4), env(safe-area-inset-left));
+    padding-right: max(var(--space-4), env(safe-area-inset-right));
+    background: var(--color-surface);
+    border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
+    box-shadow: var(--shadow-sheet);
+    animation: course-card-in 200ms ease-out;
+  }
+
+  .course-card[hidden] {
+    display: none;
+  }
+
+  @keyframes course-card-in {
+    from {
+      transform: translateY(1.5rem);
+      opacity: 0;
+    }
+  }
+
+  .course-card__head {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .course-card__name {
+    flex: 1;
+    min-width: 0;
+    padding-top: var(--space-2);
+    font-size: var(--font-size-lg);
+    overflow-wrap: anywhere;
+  }
+
+  /* Focus is moved here so the card is announced; it isn't a control. */
+  .course-card__name:focus {
+    outline: none;
+  }
+
+  .course-card__close {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: var(--target-min);
+    height: var(--target-min);
+    margin: calc(-1 * var(--space-1)) calc(-1 * var(--space-2)) 0 0;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: var(--color-chip);
+    color: var(--color-navy);
+    cursor: pointer;
+  }
+
+  .course-card__close:hover {
+    background: var(--color-divider);
+  }
+
+  .course-card__location {
+    margin: var(--space-1) 0 0;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+  }
+
+  .course-card__details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+  }
+
+  .course-card__chip {
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-pill);
+    background: var(--color-chip);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .course-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: var(--target-min);
+    margin-left: auto;
+    padding: 0 var(--space-4);
+    border: 1.5px solid var(--color-navy);
+    border-radius: var(--radius-button);
+    color: var(--color-navy);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+  }
+
+  .course-card__link[hidden] {
+    display: none;
+  }
+
+  .course-card__link:hover {
+    background: var(--color-chip);
+  }
+
+  .course-card__played {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    min-height: var(--target-min);
+    margin-top: var(--space-3);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-card);
+    background: var(--color-chip);
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+  }
+
+  .course-card__played input {
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    accent-color: var(--color-played);
+    cursor: pointer;
+  }
 </style>
 
 <script>
   import { readCourses } from '../../lib/courses-client';
   import { initCourseMap } from './map';
+  import { initPins } from './pins';
 
   const courses = readCourses();
   for (const root of document.querySelectorAll<HTMLElement>('[data-course-map]')) {
     const container = root.querySelector<HTMLElement>('[data-map]');
-    if (container) initCourseMap(container, courses);
+    if (container) initPins(initCourseMap(container, courses), root, courses);
   }
 </script>

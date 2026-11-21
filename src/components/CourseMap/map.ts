@@ -2,7 +2,7 @@
  * Course map island: a Leaflet map with our illustrated UK artwork as the only layer.
  * No tiles, no API key and no requests to third-party map servers.
  *
- * T09 builds on this to add the pins and the detail card.
+ * The pins and the detail card are added by `pins.ts`.
  */
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -75,7 +75,7 @@ function coursesBounds(courses: readonly Course[]): L.LatLngBounds {
 }
 
 /**
- * Turn `container` into the course map. Returns the Leaflet map so T09 can add pins.
+ * Turn `container` into the course map. Returns the Leaflet map, for the pins.
  * The position and zoom are never saved: every visit starts fitted to the courses.
  */
 export function initCourseMap(container: HTMLElement, courses: readonly Course[]): L.Map {
