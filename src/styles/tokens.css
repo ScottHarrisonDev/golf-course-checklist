@@ -1,0 +1,71 @@
+/* Design tokens: Option C, "Fairway Modern" (docs/requirements-v1.md section 3).
+   Use these custom properties rather than raw values. */
+
+:root {
+  /* Colours */
+  --color-navy: #0f2c3f; /* header background, main text, outlines */
+  --color-slate: #3c5566; /* secondary text, unselected tabs */
+  --color-played: #1c7a47; /* played pins and icons, checkbox accent */
+  --color-progress: #7ee0a1; /* progress bar fill, on navy only */
+  --color-mint: #cdebd8; /* selected tab highlight */
+  --color-flag: #ffb020; /* unplayed flag, open-pin ring: decoration only, never text */
+  --color-surface: #ffffff; /* cards, sheet, tab bar */
+  --color-background: #f2f6f3; /* list background */
+  --color-chip: #e8efeb; /* chips, Played row in the card */
+  --color-border: #b8c7bf; /* unselected filter outlines */
+  --color-divider: #e1e8e4; /* dividers */
+
+  /* Map artwork */
+  --color-map-land: #ddefd5;
+  --color-map-fields: #cbe6c0;
+  --color-map-woods: #b9dcae;
+  --color-map-water: #a6d8ee;
+  --color-map-rivers: #8ccdea;
+  --color-map-roads: #ffffff;
+
+  /* Text roles */
+  --color-text: var(--color-navy);
+  --color-text-muted: var(--color-slate);
+  --color-text-on-navy: #ffffff;
+
+  /* Type */
+  --font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+  --font-weight-medium: 500;
+  --font-weight-body: 600;
+  --font-weight-bold: 700;
+  --font-weight-heading: 800;
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --line-height: 1.4;
+
+  /* Spacing (4px scale) */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.5rem; /* 24px */
+  --space-6: 2rem; /* 32px */
+
+  /* Shape */
+  --radius-button: 12px;
+  --radius-card: 16px; /* cards and rows */
+  --radius-sheet: 24px; /* bottom sheet top corners */
+  --radius-pill: 999px; /* filters and chips */
+
+  /* Depth: soft navy-tinted shadows, no gradients */
+  --shadow-card: 0 1px 2px rgb(15 44 63 / 0.06), 0 2px 8px rgb(15 44 63 / 0.08);
+  --shadow-float: 0 2px 4px rgb(15 44 63 / 0.1), 0 6px 16px rgb(15 44 63 / 0.14);
+  --shadow-sheet: 0 -4px 24px rgb(15 44 63 / 0.16);
+
+  /* Sizes */
+  --target-min: 44px; /* minimum touch target */
+
+  /* Focus: navy ring on light surfaces. Elements on navy set --focus-ring-color to
+     --color-progress (both give well over 3:1 against their background). */
+  --focus-ring-color: var(--color-navy);
+  --focus-ring-width: 3px;
+  --focus-ring-offset: 2px;
+}
