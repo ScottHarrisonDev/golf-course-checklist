@@ -10,7 +10,20 @@ Work on task T0$ARGUMENTS (GitHub issue #$ARGUMENTS) in
 ScottHarrisonDev/golf-course-checklist. For two-digit numbers the task is T$ARGUMENTS
 (e.g. issue #10 = T10).
 
-## 1. Read first
+## 1. Sync with the latest `main`
+
+Before reading anything, bring this worktree up to date so you build on every merged
+task:
+
+```sh
+git fetch origin main
+git merge --ff-only origin/main
+```
+
+If the fast-forward fails (this branch already has its own commits, for example when
+resuming a task), don't rebase or reset: stop and tell the user.
+
+## 2. Read first
 
 1. `CLAUDE.md`
 2. `docs/requirements-v1.md`
@@ -18,13 +31,14 @@ ScottHarrisonDev/golf-course-checklist. For two-digit numbers the task is T$ARGU
 4. The issue: `gh issue view $ARGUMENTS`. The issue is the source of truth for
    **Owns**, the work and the acceptance criteria.
 
-If the task depends on work that isn't on this branch yet, stop and say so.
+If the issue is labelled `blocked`, or the task depends on work that isn't on this
+branch yet, stop and say so.
 
-## 2. Set up
+## 3. Set up
 
 Run `npm ci` in this worktree.
 
-## 3. Do the work
+## 4. Do the work
 
 - Change **only** the files the task owns. Never edit frozen files (listed in
   `CLAUDE.md`). If something outside your files needs to change, stop and comment on
@@ -34,7 +48,7 @@ Run `npm ci` in this worktree.
 - British English. Use `import.meta.env.BASE_URL` for internal links and assets.
 - Meet every acceptance criterion in the issue, and try each one rather than assuming.
 
-## 4. Verify
+## 5. Verify
 
 All three must pass:
 
@@ -46,7 +60,7 @@ npm run build
 
 For UI tasks, run the site and take a screenshot at 375px wide.
 
-## 5. Ship
+## 6. Ship
 
 1. Create a branch `task/T0$ARGUMENTS-<short-slug>` (e.g. `task/T06-course-list`).
 2. Make small commits with clear messages.
