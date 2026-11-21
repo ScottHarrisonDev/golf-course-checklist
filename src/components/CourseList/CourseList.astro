@@ -1,0 +1,60 @@
+---
+/**
+ * STUB (T02). T06 replaces the insides: course cards, filters and Played checkboxes.
+ *
+ * Contract: fills the List tab panel. Receives the courses (already A–Z) as `courses`.
+ */
+import PlayedIcon from '../icons/PlayedIcon.astro';
+import type { Course } from '../../lib/types';
+
+interface Props {
+  courses: Course[];
+}
+
+const { courses } = Astro.props;
+---
+
+<div class="course-list">
+  <h2 class="visually-hidden">Courses</h2>
+  <ul>
+    {
+      courses.map((course) => (
+        <li>
+          <PlayedIcon played={false} />
+          <span>
+            {course.name}
+            <span class="visually-hidden">, not played</span>
+          </span>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  .course-list {
+    padding: var(--space-4);
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    background: var(--color-surface);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+  }
+
+  li > :global(svg) {
+    flex-shrink: 0;
+  }
+</style>

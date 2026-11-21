@@ -1,0 +1,39 @@
+---
+/**
+ * STUB (T02). T05 replaces the insides: "N of M played" plus a labelled <progress>,
+ * updated in the browser with `onPlayedChange`.
+ *
+ * Contract: sits in the navy header. Receives all courses as `courses`.
+ */
+import type { Course } from '../../lib/types';
+
+interface Props {
+  courses: Course[];
+}
+
+const { courses } = Astro.props;
+const total = courses.length;
+---
+
+<div class="progress-summary">
+  <p class="progress-summary__text">0 of {total} played</p>
+  <progress value="0" max={total} aria-label="Courses played">0 of {total}</progress>
+</div>
+
+<style>
+  .progress-summary {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .progress-summary__text {
+    margin: 0;
+    font-size: var(--font-size-sm);
+  }
+
+  progress {
+    width: 100%;
+    accent-color: var(--color-progress);
+  }
+</style>

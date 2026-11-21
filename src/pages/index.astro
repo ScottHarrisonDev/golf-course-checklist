@@ -1,15 +1,53 @@
 ---
-// Placeholder page. T02 replaces this with the real layout.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Tabs from '../components/Tabs/Tabs.astro';
+import ProgressSummary from '../components/ProgressSummary/ProgressSummary.astro';
+import CourseMap from '../components/CourseMap/CourseMap.astro';
+import CourseList from '../components/CourseList/CourseList.astro';
+import { getCourses } from '../lib/courses';
+import { COURSES_DATA_ID } from '../lib/courses-client';
+
+const title = 'Golf Course Checklist';
+const courses = await getCourses();
+// Escape "<" so course text can never close the script element early.
+const coursesJson = JSON.stringify(courses).replace(/</g, '\\u003c');
 ---
 
-<!doctype html>
-<html lang="en-GB">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Golf Course Checklist</title>
-  </head>
-  <body>
-    <h1>Golf Course Checklist</h1>
-  </body>
-</html>
+<BaseLayout title={title}>
+  <header class="app-header">
+    <h1>{title}</h1>
+    <ProgressSummary courses={courses} />
+  </header>
+  <main class="app-main">
+    <Tabs>
+      <CourseMap slot="map" courses={courses} />
+      <CourseList slot="list" courses={courses} />
+    </Tabs>
+  </main>
+  <script type="application/json" id={COURSES_DATA_ID} set:html={coursesJson} />
+</BaseLayout>
+
+<style>
+  .app-header {
+    --focus-ring-color: var(--color-progress);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: var(--space-4);
+    padding-top: max(var(--space-4), env(safe-area-inset-top));
+    padding-left: max(var(--space-4), env(safe-area-inset-left));
+    padding-right: max(var(--space-4), env(safe-area-inset-right));
+    background: var(--color-navy);
+    color: var(--color-text-on-navy);
+  }
+
+  .app-header h1 {
+    font-size: var(--font-size-lg);
+  }
+
+  /* Fills the screen between the header and the tab bar (the tab bar lives in Tabs). */
+  .app-main {
+    flex: 1;
+    min-height: 0;
+  }
+</style>
