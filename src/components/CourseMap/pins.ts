@@ -33,6 +33,7 @@ interface Pin {
 
 interface CardElements {
   card: HTMLElement;
+  county: HTMLElement;
   name: HTMLElement;
   location: HTMLElement;
   holes: HTMLElement;
@@ -47,6 +48,7 @@ function findCard(root: HTMLElement): CardElements | null {
   if (!card) return null;
   const get = <T extends HTMLElement>(selector: string) => card.querySelector<T>(selector);
   const parts = {
+    county: get<HTMLElement>('[data-card-county]'),
     name: get<HTMLElement>('[data-card-name]'),
     location: get<HTMLElement>('[data-card-location]'),
     holes: get<HTMLElement>('[data-card-holes]'),
@@ -161,6 +163,7 @@ export function initPins(map: L.Map, root: HTMLElement, courses: readonly Course
   const els = cardEls;
 
   function fillCard(course: Course): void {
+    els.county.textContent = course.county;
     els.name.textContent = course.name;
     els.location.textContent = course.location;
     els.holes.textContent = holesLabel(course.holes);
@@ -195,8 +198,8 @@ export function initPins(map: L.Map, root: HTMLElement, courses: readonly Course
     fillCard(pin.course);
     setOpenPin(id);
     els.card.hidden = false;
-    // Move focus into the card so screen readers announce it; the heading is the
-    // first thing read.
+    // Move focus into the card so screen readers announce it: the dialog's name
+    // (county, then course name), then the heading.
     els.name.focus({ preventScroll: true });
     keepPinVisible(pin);
   }

@@ -42,11 +42,15 @@ const { courses } = Astro.props;
     id="course-card"
     data-card
     role="dialog"
-    aria-labelledby="course-card-name"
+    aria-labelledby="course-card-county course-card-name"
     hidden
   >
     <div class="course-card__head">
-      <h3 class="course-card__name" id="course-card-name" tabindex="-1" data-card-name></h3>
+      <div class="course-card__title">
+        <!-- The county eyebrow: part of the card's name (read first), not a heading. -->
+        <p class="course-card__county" id="course-card-county" data-card-county></p>
+        <h3 class="course-card__name" id="course-card-name" tabindex="-1" data-card-name></h3>
+      </div>
       <button type="button" class="course-card__close" data-card-close aria-label="Close">
         <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
           <path
@@ -259,10 +263,24 @@ const { courses } = Astro.props;
     gap: var(--space-2);
   }
 
-  .course-card__name {
+  .course-card__title {
     flex: 1;
     min-width: 0;
     padding-top: var(--space-2);
+  }
+
+  .course-card__county {
+    margin: 0 0 var(--space-1);
+    color: var(--color-slate);
+    font-size: 0.75rem; /* 12px */
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+  }
+
+  .course-card__name {
     font-size: var(--font-size-lg);
     overflow-wrap: anywhere;
   }
