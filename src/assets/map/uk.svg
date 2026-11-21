@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 1968.38" width="1050" height="1968.38" preserveAspectRatio="none">
+  <!-- Placeholder until T07. Covers MAP_BOUNDS exactly (lat 49.8 to 60.9, lng -8.7 to 1.8)
+       in Web Mercator at 100 units per degree of longitude, so the height is
+       (mercY(60.9) - mercY(49.8)) in degrees x 100 = 1968.38. -->
+  <rect width="1050" height="1968.38" fill="#DDEFD5" stroke="#0F2C3F" stroke-width="4"/>
+</svg>
