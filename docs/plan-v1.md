@@ -6,7 +6,8 @@ Requirements: `docs/requirements-v1.md` (agreed). Each task below names the feat
 Modern" (requirements section 3).
 
 Agents run as **local Claude Code sessions, each in its own git worktree** (section 6).
-GitHub issues: T01 = #1 … T11 = #11.
+GitHub issues: T01 = #1 … T11 = #11. Changes requested after that are separate issues
+(section 8).
 
 ---
 
@@ -346,11 +347,12 @@ criteria.
 
 ### The `/task <n>` skill (created in T01)
 
-Tells the agent to: read `CLAUDE.md`, `docs/requirements-v1.md`, the task's section
-in `docs/plan-v1.md` and issue #n (`gh issue view n`; issue #n = task T0n); install
+Tells the agent to: sync with the latest `main`; read `CLAUDE.md`,
+`docs/requirements-v1.md`, the relevant parts of this plan and issue #n
+(`gh issue view n`; issues #1–#11 are tasks T01–T11, later issues stand alone); install
 dependencies; change only owned files; meet the acceptance criteria; run check, test
-and build; push a branch named `task/T0n-<slug>`; open a pull request that says
-`Closes #n` and ticks the criteria.
+and build; push a branch named `task/T0n-<slug>` (or `task/<n>-<slug>` for later
+issues); open a pull request that says `Closes #n` and ticks the criteria.
 
 ### Starter prompt (until `/task` exists)
 
@@ -395,3 +397,21 @@ and build; push a branch named `task/T0n-<slug>`; open a pull request that says
 - **The Option C mockups live on a claude.ai design canvas** that agents can't open.
   Requirements section 3 describes the essentials; screenshots can be added to
   `docs/design/` if agents need more.
+
+---
+
+## 8. Pre-release changes (after the first look at the live site)
+
+Requested on 21 November 2026, before tagging `v1.0.0`. They are separate GitHub
+issues rather than plan tasks: each issue is complete on its own (goal, owned files,
+acceptance criteria), and there is no T-number. The requirements were updated first.
+
+| Issue | Change | Owns | Can run alongside | Depends on |
+|---|---|---|---|---|
+| #28 | Map artwork: whole of Ireland (drawn like the UK), no roads, no France | `src/assets/map/uk.svg`, `src/lib/map-config.ts` (`MAP_BOUNDS`), `docs/map-artwork.md` | #29 | — |
+| #29 | Map: amplified pinch, so one pinch zooms out to the whole map | `src/components/CourseMap/map.ts` (+ a new pinch-zoom file in that folder) | #28 | — |
+
+- #28 changes files that are normally frozen; Scott approved this for that issue only.
+- The two issues own different files, so they run in parallel. Check the pinch again
+  once both are merged, as widening the map changes the whole-map zoom level slightly.
+- The release check (#11) now depends on #10, #28 and #29.

@@ -28,8 +28,13 @@ three on every pull request and deploys on push to `main`.
 ## Conventions
 
 - **One task = one GitHub issue = one worktree = one branch = one pull request.**
-  Issue #n is task T0n (T10 = #10, T11 = #11).
-- Branch name: `task/T0n-<slug>`, e.g. `task/T06-course-list`.
+  Issues #1–#11 are plan tasks: issue #n is task T0n (T10 = #10, T11 = #11). Later
+  issues are not plan tasks; each one is complete on its own (see `docs/plan-v1.md`
+  section 8).
+- Branch name: `task/T0n-<slug>` for plan tasks (e.g. `task/T06-course-list`), or
+  `task/<n>-<slug>` for later issues (e.g. `task/28-map-ireland`).
+- An issue may approve changes to specific frozen files; that approval covers only the
+  files it names.
 - Pull request description says `Closes #<n>` and ticks the task's acceptance criteria.
   UI tasks include a screenshot at 375px wide.
 - **`Closes #<n>` for the task's own issue is the only closing keyword allowed.** GitHub
