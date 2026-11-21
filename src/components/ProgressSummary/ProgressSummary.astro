@@ -75,6 +75,13 @@ const ids = JSON.stringify(courses.map((course) => course.id));
     border-radius: var(--radius-pill);
   }
 
+  /* The global reduced-motion reset doesn't reach this pseudo-element. */
+  @media (prefers-reduced-motion: reduce) {
+    .progress-summary__bar::-webkit-progress-value {
+      transition: none;
+    }
+  }
+
   /* Windows High Contrast / forced colours: keep the bar visible. */
   @media (forced-colors: active) {
     .progress-summary__bar {
