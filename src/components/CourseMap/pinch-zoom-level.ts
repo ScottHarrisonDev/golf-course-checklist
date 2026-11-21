@@ -3,8 +3,12 @@
  * Leaflet so it can be unit-tested without a browser.
  */
 
-/** How much further than the fingers the map zooms. 2: fingers 4× closer = 4 levels out. */
-export const PINCH_ZOOM_FACTOR = 2;
+/**
+ * How much further than the fingers the map zooms. 3.5: fingers 3× closer (about 1.6
+ * levels one-to-one) = about 5.5 levels out, enough to go from the opening view to the
+ * whole map in one pinch. 2 still felt far too weak on a phone.
+ */
+export const PINCH_ZOOM_FACTOR = 3.5;
 
 /**
  * The zoom for a pinch: `startZoom` plus `factor` times the one-to-one zoom change for
