@@ -8,6 +8,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { MAP_ARTWORK_URL, MAP_BOUNDS } from '../../lib/map-config';
 import type { Course } from '../../lib/types';
+import { PinchZoom } from './pinch-zoom';
 
 /** Dispatched by Tabs on a panel when it becomes visible. */
 const TAB_SHOWN_EVENT = 'golf:tab-shown';
@@ -95,7 +96,10 @@ export function initCourseMap(container: HTMLElement, courses: readonly Course[]
     fadeAnimation: animate,
     markerZoomAnimation: animate,
     inertia: animate,
+    // Replaced by an amplified pinch, so one pinch can reach the whole map.
+    touchZoom: false,
   });
+  new PinchZoom(map).enable();
 
   L.imageOverlay(MAP_ARTWORK_URL, ARTWORK_BOUNDS, { alt: '', interactive: false }).addTo(map);
   createZoomControl().addTo(map);
