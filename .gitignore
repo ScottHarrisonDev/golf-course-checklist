@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Astro build output and generated types
+dist/
+.astro/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+
+# Claude Code worktrees (one per agent task)
+.claude/worktrees/
