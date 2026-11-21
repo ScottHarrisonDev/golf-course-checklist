@@ -166,6 +166,12 @@
       overscroll-behavior: auto;
     }
 
+    /* The sticky bar can overlap the panels here. Keep Leaflet's high z-indexes in
+       their own stacking context so the bar paints on top. */
+    .tabs__panels {
+      isolation: isolate;
+    }
+
     .tabs__bar {
       position: sticky;
       bottom: 0;
