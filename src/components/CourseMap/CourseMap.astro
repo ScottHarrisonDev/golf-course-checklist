@@ -1,12 +1,11 @@
 ---
 /**
- * STUB (T02). T08 replaces the insides with the Leaflet map; T09 adds pins and the
- * detail card.
+ * The Map tab: a Leaflet map with our illustrated UK artwork as its only layer
+ * (T08). T09 adds the pins and the detail card.
  *
- * Contract: fills the Map tab panel. Receives the courses as `courses`. Refresh the
- * map size when the panel dispatches `golf:tab-shown`.
+ * Fills the Map tab panel. The courses come from the page's embedded JSON in the
+ * browser; `courses` here is only used for the server-rendered fallback text.
  */
-import { MAP_ARTWORK_URL } from '../../lib/map-config';
 import type { Course } from '../../lib/types';
 
 interface Props {
@@ -16,34 +15,122 @@ interface Props {
 const { courses } = Astro.props;
 ---
 
-<div class="course-map">
+<div class="course-map" data-course-map>
   <h2 class="visually-hidden">Map</h2>
-  <img src={MAP_ARTWORK_URL} alt="" class="course-map__artwork" />
-  <p class="course-map__note">Map coming soon: {courses.length} courses to show.</p>
+  <p id="course-map-help" class="visually-hidden">
+    Use the arrow keys to move the map, and the plus and minus keys to zoom.
+  </p>
+  <div
+    class="course-map__map"
+    data-map
+    role="region"
+    aria-label="Map of golf courses"
+    aria-describedby="course-map-help"
+  >
+    <noscript>
+      <p class="course-map__fallback">
+        The map needs JavaScript. All {courses.length} courses are in the List tab.
+      </p>
+    </noscript>
+  </div>
 </div>
 
 <style>
   .course-map {
     position: relative;
     height: 100%;
-    background: var(--color-map-water);
   }
 
-  .course-map__artwork {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  .course-map__note {
+  .course-map__map {
     position: absolute;
-    left: var(--space-4);
-    right: var(--space-4);
-    bottom: var(--space-4);
-    margin: 0;
+    inset: 0;
+    /* The sea around the artwork. */
+    background: var(--color-map-water);
+    font-family: inherit;
+    font-size: var(--font-size-md);
+  }
+
+  .course-map__map:focus-visible {
+    outline: var(--focus-ring-width) solid var(--focus-ring-color);
+    outline-offset: calc(-1 * var(--focus-ring-width));
+  }
+
+  .course-map__fallback {
+    margin: var(--space-4);
     padding: var(--space-3) var(--space-4);
     background: var(--color-surface);
     border-radius: var(--radius-card);
     box-shadow: var(--shadow-float);
   }
+
+  /* Leaflet builds these elements at runtime, so they need :global(). */
+
+  .course-map :global(.leaflet-top.leaflet-right .leaflet-control) {
+    margin: var(--space-3) var(--space-3) 0 0;
+  }
+
+  .course-map :global(.course-map__zoom) {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-surface);
+    border-radius: var(--radius-button);
+    box-shadow: var(--shadow-float);
+  }
+
+  .course-map :global(.course-map__zoom-button) {
+    display: grid;
+    place-items: center;
+    width: var(--target-min);
+    height: var(--target-min);
+    padding: 0;
+    border: 0;
+    border-radius: var(--radius-button);
+    background: none;
+    color: var(--color-navy);
+    font: inherit;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .course-map :global(.course-map__zoom-button + .course-map__zoom-button) {
+    border-top: 1px solid var(--color-divider);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .course-map :global(.course-map__zoom-button:first-child) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .course-map :global(.course-map__zoom-button:hover) {
+    background: var(--color-chip);
+  }
+
+  .course-map :global(.course-map__zoom-button:focus-visible) {
+    outline: var(--focus-ring-width) solid var(--focus-ring-color);
+    outline-offset: var(--focus-ring-offset);
+  }
+
+  .course-map :global(.course-map__zoom-button[aria-disabled='true']) {
+    color: var(--color-border);
+    cursor: default;
+  }
+
+  .course-map :global(.course-map__zoom-button[aria-disabled='true']:hover) {
+    background: none;
+  }
 </style>
+
+<script>
+  import { readCourses } from '../../lib/courses-client';
+  import { initCourseMap } from './map';
+
+  const courses = readCourses();
+  for (const root of document.querySelectorAll<HTMLElement>('[data-course-map]')) {
+    const container = root.querySelector<HTMLElement>('[data-map]');
+    if (container) initCourseMap(container, courses);
+  }
+</script>
