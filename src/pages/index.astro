@@ -50,4 +50,14 @@ const coursesJson = JSON.stringify(courses).replace(/</g, '\\u003c');
     flex: 1;
     min-height: 0;
   }
+
+  /* Short viewports: the page scrolls (see BaseLayout), so the header can scroll away
+     and the views and tab bar get the whole screen. */
+  @media (max-height: 32rem) {
+    .app-main {
+      flex: none;
+      height: 100vh;
+      height: 100dvh;
+    }
+  }
 </style>

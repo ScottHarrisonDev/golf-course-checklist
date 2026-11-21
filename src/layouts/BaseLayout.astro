@@ -39,4 +39,19 @@ const { title, description = 'Golf courses I want to play, on a map and in a lis
     height: 100dvh;
     overflow: hidden;
   }
+
+  /* Short viewports (400% zoom, landscape phones): one screen can't hold the header,
+     a usable view and the tab bar, so let the page scroll and the header scroll away
+     (WCAG 1.4.10). The main area still fills one screen; see index.astro and Tabs. */
+  @media (max-height: 32rem) {
+    html {
+      /* Room for the sticky tab bar, so focused controls never land behind it. */
+      scroll-padding-bottom: 3.5rem;
+    }
+
+    body {
+      height: auto;
+      overflow: visible;
+    }
+  }
 </style>
