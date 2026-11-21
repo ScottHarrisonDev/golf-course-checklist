@@ -304,6 +304,10 @@ criteria.
   pushes its branch and opens a pull request with `gh pr create`.
 - After the pull request is merged, exit the session and let Claude Code remove the
   worktree.
+- Merging closes the issue (`Closes #n`). The `Unblock issues` workflow
+  (`.github/workflows/unblock-issues.yml`) then removes the `blocked` label from any
+  issue whose "depends on:" issues are all closed, and comments to say so. Keep the
+  "depends on: #n" line in issue bodies so it can find them.
 
 ### The `/task <n>` skill (created in T01)
 
