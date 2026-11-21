@@ -414,4 +414,26 @@ acceptance criteria), and there is no T-number. The requirements were updated fi
 - #28 changes files that are normally frozen; Scott approved this for that issue only.
 - The two issues own different files, so they run in parallel. Check the pinch again
   once both are merged, as widening the map changes the whole-map zoom level slightly.
-- The release check (#11) now depends on #10, #28 and #29.
+
+### Second batch (still before `v1.0.0`)
+
+| Issue | Change | Owns | Can run alongside | Depends on |
+|---|---|---|---|---|
+| #33 | County field on each course; county eyebrow on the map card | `src/data/courses.json`, `src/content.config.ts`, `src/lib/types.ts`, the card in `CourseMap.astro` and `pins.ts` | #34 | — |
+| #34 | Map navigation: much stronger pinch; zoom and scroll past the edges into plain sea | `map.ts`, `pinch-zoom.ts`, `pinch-zoom-level.ts` | #33 | — |
+| #35 | County labels on the map, shown only where they fit | new `county-labels.ts` (+ styles), new `src/data/county-labels.json`, one call in `map.ts`, a section of `docs/map-artwork.md` | — | #34 |
+
+- #33 and #35 change frozen files; Scott approved this for the files each issue names.
+- The release check (#11) now depends on #10, #28, #29, #33, #34 and #35.
+
+### Planned for v1.1 (after `v1.0.0`)
+
+See `docs/requirements-v1.1.md`.
+
+| Issue | Change | Depends on |
+|---|---|---|
+| #36 | Venues with several courses: one pin and card per venue, a Played checkbox per course, a partly played state, progress counting courses | #11 |
+| #37 | Cluster nearby pins; tapping a cluster zooms in | #36 |
+
+#36 touches most of the app (data, types, icons, map card, list, progress), so it runs
+alone. Clustering builds on its one-pin-per-venue map.

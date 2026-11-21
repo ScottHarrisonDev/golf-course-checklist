@@ -8,6 +8,8 @@ https://scottharrisondev.github.io/golf-course-checklist/.
 Read these before starting any task:
 
 - `docs/requirements-v1.md`: agreed v1 scope, acceptance criteria (F1–F8), design tokens.
+- `docs/requirements-v1.1.md`: v1.1 additions (venues with several courses, clustering),
+  for issues labelled `v1.1`.
 - `docs/plan-v1.md`: the task plan, contracts (section 2), file ownership and conventions.
 
 ## Commands
