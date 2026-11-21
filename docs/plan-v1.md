@@ -82,6 +82,41 @@ export function onPlayedChange(fn: (d: PlayedChangeDetail) => void): () => void;
   circle with a yellow flag) are shared SVG snippets in
   `src/components/icons/PlayedIcon.astro` so the map and list match exactly.
 
+### Refinements recorded in T02
+
+- **Store:** `setPlayed` does nothing (no save, no event) if the status is unchanged.
+  The store loads from `createStorage()` lazily on first use. `initStore(storage?)`
+  (re)loads it from a given storage; mainly for tests. Outside a browser (tests,
+  server rendering) events go to a private `EventTarget` instead of `document`, so
+  nothing throws. Store functions are for browser code: server-rendered markup should
+  assume nothing is played.
+- **Storage:** `src/lib/storage/memory.ts` exports `createMemoryStorage(initial?)`, for
+  tests and as T03's fallback. `src/lib/storage/index.ts` re-exports the
+  `PlayedStorage` type.
+- **Course data:** `src/lib/courses-client.ts` also exports `COURSES_DATA_ID`
+  (`'courses-data'`). `readCourses()` returns `[]` (and logs) rather than throwing if
+  the data is missing. Validation lives in `src/content.config.ts` (custom loader:
+  missing or duplicate ids, then a strict schema, so a misspelt key such as `wesbite`
+  also fails the build).
+- **Map config:** `MAP_BOUNDS` is Leaflet-ready: `[[49.8, -8.7], [60.9, 1.8]]`
+  (`[[south, west], [north, east]]`). Also exports `MAP_ARTWORK_URL` (string, base path
+  included; may be a `data:` URI while the artwork is tiny) and
+  `isInMapBounds(lat, lng)`. At 100 SVG units per degree of longitude, the artwork's
+  viewBox is `0 0 1050 1968.38`.
+- **Played icons:** `src/components/icons/played-icon.ts` exports
+  `playedIconSvg(played, size = 24, className = '')`, the same SVG as a string for
+  browser code such as Leaflet pins. `PlayedIcon.astro` takes `played`, `size` and
+  `class`.
+- **Page wiring:** `index.astro` passes `courses` (A–Z) to `ProgressSummary`,
+  `CourseMap` and `CourseList`. `Tabs` owns the tab bar **and** both panels: the page
+  passes the views as named slots, `<CourseMap slot="map">` and
+  `<CourseList slot="list">`. Ids: `tab-map`, `tab-list`, `panel-map`, `panel-list`.
+  Panels scroll inside themselves; the page itself never scrolls.
+- **Design tokens:** custom properties in `src/styles/tokens.css` (`--color-*`,
+  `--space-1`…`--space-6`, `--radius-*`, `--shadow-*`, `--target-min`). Focus ring is
+  `--focus-ring-color` (navy; the header sets it to progress green). `global.css`
+  provides a `.visually-hidden` class and a reduced-motion reset.
+
 ---
 
 ## 3. Target file layout (after Wave 0)

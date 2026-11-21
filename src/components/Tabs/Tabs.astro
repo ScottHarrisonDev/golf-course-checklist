@@ -1,0 +1,106 @@
+---
+/**
+ * STUB (T02). T04 replaces the insides with the full accessible tab bar.
+ *
+ * Contract: renders the tab bar FIRST in the source, then one panel per view. The
+ * page passes the views as named slots `map` and `list`. The tab bar is moved to the
+ * bottom of the screen with CSS. When a panel becomes visible, dispatch
+ * `golf:tab-shown` on that panel. Hidden panels stay in the page so the map keeps its
+ * state.
+ */
+---
+
+<div class="tabs">
+  <div class="tabs__bar" role="tablist" aria-label="Views">
+    <button type="button" role="tab" id="tab-map" aria-controls="panel-map" aria-selected="true">
+      Map
+    </button>
+    <button
+      type="button"
+      role="tab"
+      id="tab-list"
+      aria-controls="panel-list"
+      aria-selected="false"
+      tabindex="-1"
+    >
+      List
+    </button>
+  </div>
+  <div class="tabs__panels">
+    <section class="tabs__panel" role="tabpanel" id="panel-map" aria-labelledby="tab-map">
+      <slot name="map" />
+    </section>
+    <section class="tabs__panel" role="tabpanel" id="panel-list" aria-labelledby="tab-list" hidden>
+      <slot name="list" />
+    </section>
+  </div>
+</div>
+
+<style>
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .tabs__panels {
+    flex: 1;
+    min-height: 0;
+    position: relative;
+  }
+
+  .tabs__panel {
+    position: absolute;
+    inset: 0;
+    overflow-y: auto;
+  }
+
+  .tabs__panel[hidden] {
+    display: none;
+  }
+
+  /* First in the source, last on screen. */
+  .tabs__bar {
+    order: 2;
+    display: flex;
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-divider);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .tabs__bar button {
+    flex: 1;
+    min-height: var(--target-min);
+    border: 0;
+    background: none;
+    color: var(--color-slate);
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+  }
+
+  .tabs__bar button[aria-selected='true'] {
+    background: var(--color-mint);
+    color: var(--color-navy);
+  }
+</style>
+
+<script>
+  // Minimal switching so the page works end to end. T04 replaces this.
+  const TAB_SHOWN_EVENT = 'golf:tab-shown';
+  const tabs = Array.from(document.querySelectorAll<HTMLButtonElement>('.tabs [role="tab"]'));
+
+  function select(tab: HTMLButtonElement) {
+    for (const t of tabs) {
+      const selected = t === tab;
+      t.setAttribute('aria-selected', String(selected));
+      t.tabIndex = selected ? 0 : -1;
+      const panel = document.getElementById(t.getAttribute('aria-controls') ?? '');
+      if (!panel) continue;
+      const wasHidden = panel.hidden;
+      panel.hidden = !selected;
+      if (selected && wasHidden) panel.dispatchEvent(new CustomEvent(TAB_SHOWN_EVENT));
+    }
+  }
+
+  for (const tab of tabs) tab.addEventListener('click', () => select(tab));
+</script>

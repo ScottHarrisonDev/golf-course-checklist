@@ -1,0 +1,19 @@
+---
+/**
+ * Played (green circle, white tick) or unplayed (white circle, navy outline, yellow
+ * flag) icon. Decorative (`aria-hidden`): always show the status in text as well.
+ * Browser code can use `playedIconSvg()` from `./played-icon` for identical markup.
+ */
+import { playedIconSvg } from './played-icon';
+
+interface Props {
+  played: boolean;
+  /** Width and height in px. */
+  size?: number;
+  class?: string;
+}
+
+const { played, size = 24, class: className = '' } = Astro.props;
+---
+
+<Fragment set:html={playedIconSvg(played, size, className)} />
