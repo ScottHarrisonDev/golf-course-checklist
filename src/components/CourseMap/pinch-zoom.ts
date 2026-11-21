@@ -4,7 +4,8 @@
  * Leaflet's own touch zoom maps a pinch one-to-one (fingers 4× closer = 4× zoom out,
  * two zoom levels), so getting from the opening view to the whole map took several
  * pinches. This handler is Leaflet 1.9.4's `TouchZoom` with the zoom change multiplied
- * by `PINCH_ZOOM_FACTOR`. It keeps the zoom centred between the fingers, lets two
+ * by `PINCH_ZOOM_FACTOR`, and a pinch that starts during a zoom animation is taken
+ * rather than ignored. It keeps the zoom centred between the fingers, lets two
  * fingers pan during the pinch, stays inside the zoom limits and `maxBounds`, and
  * snaps to `zoomSnap` when the fingers lift.
  *
@@ -16,6 +17,7 @@ import { PINCH_ZOOM_FACTOR, pinchZoomLevel } from './pinch-zoom-level';
 /** Leaflet internals used by its own `TouchZoom` (not in the public typings). */
 interface MapInternals {
   _animatingZoom?: boolean;
+  _onZoomTransitionEnd(): void;
   _stop(): void;
   _moveStart(zoomChanged: boolean, noMoveStart: boolean): void;
   _move(center: L.LatLng, zoom: number, data?: object): void;
@@ -75,8 +77,13 @@ export const PinchZoom: new (map: L.Map) => L.Handler = L.Handler.extend({
   _onTouchStart(this: PinchZoomHandler, e: Event) {
     const map = this._map;
     const fingers = twoFingers(map, e);
-    if (!fingers || map._animatingZoom || this._zooming) return;
+    if (!fingers || this._zooming) return;
     const [p1, p2] = fingers;
+
+    // Leaflet ignores a pinch that starts while a zoom animation runs, such as the
+    // snap after the last pinch (about 250 ms). Quick repeated pinches were lost that
+    // way, which made the pinch feel weak. Finish the animation and take the pinch.
+    if (map._animatingZoom) map._onZoomTransitionEnd();
 
     this._centerPoint = map.getSize().divideBy(2);
     this._pinchStartLatLng = map.containerPointToLatLng(p1.add(p2).divideBy(2));
