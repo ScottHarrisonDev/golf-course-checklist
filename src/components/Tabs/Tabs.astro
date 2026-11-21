@@ -1,29 +1,60 @@
 ---
 /**
- * STUB (T02). T04 replaces the insides with the full accessible tab bar.
+ * Map / List tabs with the tab bar at the bottom of the screen (F1).
  *
- * Contract: renders the tab bar FIRST in the source, then one panel per view. The
- * page passes the views as named slots `map` and `list`. The tab bar is moved to the
- * bottom of the screen with CSS. When a panel becomes visible, dispatch
- * `golf:tab-shown` on that panel. Hidden panels stay in the page so the map keeps its
- * state.
+ * Contract: renders the tab bar FIRST in the source, then one panel per view, so
+ * keyboard and screen-reader users reach the tabs first; CSS moves the bar to the
+ * bottom. The page passes the views as named slots `map` and `list`. Opens on Map.
+ * When a panel becomes visible, `golf:tab-shown` is dispatched on it. Hidden panels
+ * stay in the page so the map keeps its state.
  */
 ---
 
-<div class="tabs">
+<golf-tabs class="tabs">
   <div class="tabs__bar" role="tablist" aria-label="Views">
-    <button type="button" role="tab" id="tab-map" aria-controls="panel-map" aria-selected="true">
-      Map
+    <button
+      type="button"
+      role="tab"
+      class="tabs__tab"
+      id="tab-map"
+      aria-controls="panel-map"
+      aria-selected="true"
+    >
+      <span class="tabs__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+          <path
+            d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6 9 4Zm0 0v14m6-12v14"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linejoin="round"></path>
+        </svg>
+      </span>
+      <span class="tabs__label">Map</span>
     </button>
     <button
       type="button"
       role="tab"
+      class="tabs__tab"
       id="tab-list"
       aria-controls="panel-list"
       aria-selected="false"
       tabindex="-1"
     >
-      List
+      <span class="tabs__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+          <path
+            d="M9 6h11M9 12h11M9 18h11"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"></path>
+          <circle cx="4.5" cy="6" r="1.5" fill="currentColor"></circle>
+          <circle cx="4.5" cy="12" r="1.5" fill="currentColor"></circle>
+          <circle cx="4.5" cy="18" r="1.5" fill="currentColor"></circle>
+        </svg>
+      </span>
+      <span class="tabs__label">List</span>
     </button>
   </div>
   <div class="tabs__panels">
@@ -34,7 +65,7 @@
       <slot name="list" />
     </section>
   </div>
-</div>
+</golf-tabs>
 
 <style>
   .tabs {
@@ -52,7 +83,9 @@
   .tabs__panel {
     position: absolute;
     inset: 0;
+    overflow-x: hidden;
     overflow-y: auto;
+    overscroll-behavior: contain;
   }
 
   .tabs__panel[hidden] {
@@ -62,45 +95,76 @@
   /* First in the source, last on screen. */
   .tabs__bar {
     order: 2;
+    position: relative;
+    z-index: 1;
     display: flex;
+    justify-content: center;
     background: var(--color-surface);
     border-top: 1px solid var(--color-divider);
-    padding-bottom: env(safe-area-inset-bottom);
+    padding-top: var(--space-1);
+    padding-bottom: max(var(--space-1), env(safe-area-inset-bottom));
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
   }
 
-  .tabs__bar button {
+  .tabs__tab {
     flex: 1;
+    max-width: 12rem;
+    min-width: 0;
     min-height: var(--target-min);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin: 0;
+    padding: var(--space-1) var(--space-2);
     border: 0;
+    border-radius: var(--radius-button);
     background: none;
     color: var(--color-slate);
+    font-size: var(--font-size-sm);
     font-weight: var(--font-weight-bold);
+    line-height: 1.2;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
 
-  .tabs__bar button[aria-selected='true'] {
-    background: var(--color-mint);
+  /* Inside the bar so the ring is never hidden behind the panels. */
+  .tabs__tab:focus-visible {
+    outline-offset: calc(var(--focus-ring-width) * -1);
+  }
+
+  .tabs__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 2rem;
+    border-radius: var(--radius-pill);
+    transition: background-color 150ms ease;
+  }
+
+  .tabs__tab[aria-selected='true'] {
     color: var(--color-navy);
+  }
+
+  .tabs__tab[aria-selected='true'] .tabs__icon {
+    background: var(--color-mint);
+  }
+
+  .tabs__tab[aria-selected='false']:hover .tabs__icon {
+    background: var(--color-chip);
+  }
+
+  /* Windows high contrast: keep the selected tab distinguishable. */
+  @media (forced-colors: active) {
+    .tabs__tab[aria-selected='true'] .tabs__icon {
+      outline: 2px solid CanvasText;
+    }
   }
 </style>
 
 <script>
-  // Minimal switching so the page works end to end. T04 replaces this.
-  const TAB_SHOWN_EVENT = 'golf:tab-shown';
-  const tabs = Array.from(document.querySelectorAll<HTMLButtonElement>('.tabs [role="tab"]'));
-
-  function select(tab: HTMLButtonElement) {
-    for (const t of tabs) {
-      const selected = t === tab;
-      t.setAttribute('aria-selected', String(selected));
-      t.tabIndex = selected ? 0 : -1;
-      const panel = document.getElementById(t.getAttribute('aria-controls') ?? '');
-      if (!panel) continue;
-      const wasHidden = panel.hidden;
-      panel.hidden = !selected;
-      if (selected && wasHidden) panel.dispatchEvent(new CustomEvent(TAB_SHOWN_EVENT));
-    }
-  }
-
-  for (const tab of tabs) tab.addEventListener('click', () => select(tab));
+  import './tabs';
 </script>
