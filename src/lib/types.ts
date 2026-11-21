@@ -6,6 +6,8 @@ export interface Course {
   id: CourseId;
   name: string;
   location: string;
+  /** The county, exactly as named in the map artwork, e.g. "Kent". */
+  county: string;
   lat: number;
   lng: number;
   holes: 9 | 18;
