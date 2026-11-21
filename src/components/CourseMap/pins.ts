@@ -21,6 +21,10 @@ const ICON_SIZE = 32;
 /** Space kept between an open pin and the card or the map's edge, in pixels. */
 const PIN_MARGIN = 16;
 
+/** Marker z-index offsets: the open pin, and the focused pin above everything. */
+const OPEN_Z_OFFSET = 1000;
+const FOCUSED_Z_OFFSET = 2000;
+
 interface Pin {
   course: Course;
   marker: L.Marker;
@@ -145,6 +149,11 @@ export function initPins(map: L.Map, root: HTMLElement, courses: readonly Course
       container.scrollLeft = 0;
       container.scrollTop = 0;
       keepPinVisible(pin);
+      // Above neighbouring pins, which can overlap it when zoomed out.
+      marker.setZIndexOffset(FOCUSED_Z_OFFSET);
+    });
+    button.addEventListener('blur', () => {
+      marker.setZIndexOffset(openId === course.id ? OPEN_Z_OFFSET : 0);
     });
   }
 
@@ -176,7 +185,7 @@ export function initPins(map: L.Map, root: HTMLElement, courses: readonly Course
     if (id) {
       const pin = pins.get(id);
       pin?.button.setAttribute('aria-expanded', 'true');
-      pin?.marker.setZIndexOffset(1000);
+      pin?.marker.setZIndexOffset(OPEN_Z_OFFSET);
     }
   }
 
