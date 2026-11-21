@@ -32,6 +32,12 @@ three on every pull request and deploys on push to `main`.
 - Branch name: `task/T0n-<slug>`, e.g. `task/T06-course-list`.
 - Pull request description says `Closes #<n>` and ticks the task's acceptance criteria.
   UI tasks include a screenshot at 375px wide.
+- **`Closes #<n>` for the task's own issue is the only closing keyword allowed.** GitHub
+  closes any issue written after close/closes/closed, fix/fixes/fixed or
+  resolve/resolves/resolved (any case) in a pull request description or commit message
+  when it merges. Never use those words next to any other issue number. To mention
+  other issues, write "issue 8", "see #8", "depends on #8" or "unblocks #9" instead.
+  (This has already closed unfinished issues once.)
 - **Only change files the task owns** (listed under "Owns" in the issue and plan). If
   something else needs changing, stop and comment on the issue.
 - Small commits with clear messages; no unrelated tidying.
