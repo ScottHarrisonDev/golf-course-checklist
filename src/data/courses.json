@@ -24,8 +24,8 @@
     "name": "Poult Wood Golf Centre (9-hole course)",
     "location": "Tonbridge, Kent",
     "county": "Kent",
-    "lat": 51.2350,
-    "lng": 0.2870,
+    "lat": 51.235,
+    "lng": 0.287,
     "holes": 9,
     "url": "https://www.tmactive.co.uk/centres/poult-wood/"
   },
@@ -34,8 +34,8 @@
     "name": "The Ridge Golf Club",
     "location": "Sutton Valence, Maidstone, Kent",
     "county": "Kent",
-    "lat": 51.2280,
-    "lng": 0.6190,
+    "lat": 51.228,
+    "lng": 0.619,
     "holes": 18,
     "url": "https://www.theridgegolfclubkent.co.uk"
   },
@@ -44,9 +44,459 @@
     "name": "Cobtree Manor Park Golf Course",
     "location": "Boxley, Maidstone, Kent",
     "county": "Kent",
-    "lat": 51.2960,
-    "lng": 0.5080,
+    "lat": 51.296,
+    "lng": 0.508,
     "holes": 18,
     "url": "https://www.mytimeactive.co.uk/locations/cobtree-manor-park-golf-course"
+  },
+  {
+    "id": "swinley-forest",
+    "name": "Swinley Forest Golf Club",
+    "location": "Ascot, Berkshire",
+    "lat": 51.3794,
+    "lng": -0.6925,
+    "holes": 18,
+    "county": "Berkshire",
+    "url": "https://www.swinleyfgc.co.uk"
+  },
+  {
+    "id": "st-georges-hill-red-blue",
+    "name": "St George's Hill Golf Club (Red & Blue)",
+    "location": "Weybridge, Surrey",
+    "lat": 51.356,
+    "lng": -0.462,
+    "holes": 18,
+    "county": "Surrey",
+    "url": "https://www.stgeorgeshillgolfclub.co.uk"
+  },
+  {
+    "id": "st-georges-hill-green",
+    "name": "St George's Hill Golf Club (Green nine)",
+    "location": "Weybridge, Surrey",
+    "lat": 51.356,
+    "lng": -0.462,
+    "holes": 9,
+    "county": "Surrey",
+    "url": "https://www.stgeorgeshillgolfclub.co.uk"
+  },
+  {
+    "id": "royal-cinque-ports",
+    "name": "Royal Cinque Ports Golf Club",
+    "location": "Deal, Kent",
+    "lat": 51.2395,
+    "lng": 1.3965,
+    "holes": 18,
+    "county": "Kent",
+    "url": "https://www.royalcinqueports.com"
+  },
+  {
+    "id": "west-sussex",
+    "name": "West Sussex Golf Club",
+    "location": "Pulborough, West Sussex",
+    "lat": 50.943,
+    "lng": -0.478,
+    "holes": 18,
+    "county": "West Sussex",
+    "url": "https://www.westsussexgolf.co.uk"
+  },
+  {
+    "id": "rye-old",
+    "name": "Rye Golf Club (Old Course)",
+    "location": "Camber, Rye, East Sussex",
+    "lat": 50.938,
+    "lng": 0.771,
+    "holes": 18,
+    "county": "East Sussex",
+    "url": "https://www.ryegolfclub.co.uk"
+  },
+  {
+    "id": "rye-jubilee",
+    "name": "Rye Golf Club (Jubilee Course)",
+    "location": "Camber, Rye, East Sussex",
+    "lat": 50.938,
+    "lng": 0.771,
+    "holes": 18,
+    "county": "East Sussex",
+    "url": "https://www.ryegolfclub.co.uk"
+  },
+  {
+    "id": "walton-heath-old",
+    "name": "Walton Heath Golf Club (Old Course)",
+    "location": "Walton-on-the-Hill, Tadworth, Surrey",
+    "lat": 51.278,
+    "lng": -0.244,
+    "holes": 18,
+    "county": "Surrey",
+    "url": "https://www.waltonheath.com"
+  },
+  {
+    "id": "walton-heath-new",
+    "name": "Walton Heath Golf Club (New Course)",
+    "location": "Walton-on-the-Hill, Tadworth, Surrey",
+    "lat": 51.278,
+    "lng": -0.244,
+    "holes": 18,
+    "county": "Surrey",
+    "url": "https://www.waltonheath.com"
+  },
+  {
+    "id": "the-berkshire-red",
+    "name": "The Berkshire Golf Club (Red Course)",
+    "location": "Ascot, Berkshire",
+    "lat": 51.4,
+    "lng": -0.702,
+    "holes": 18,
+    "county": "Berkshire",
+    "url": "https://www.theberkshire.co.uk"
+  },
+  {
+    "id": "the-berkshire-blue",
+    "name": "The Berkshire Golf Club (Blue Course)",
+    "location": "Ascot, Berkshire",
+    "lat": 51.4,
+    "lng": -0.702,
+    "holes": 18,
+    "county": "Berkshire",
+    "url": "https://www.theberkshire.co.uk"
+  },
+  {
+    "id": "hankley-common",
+    "name": "Hankley Common Golf Club",
+    "location": "Tilford, Farnham, Surrey",
+    "lat": 51.172,
+    "lng": -0.756,
+    "holes": 18,
+    "county": "Surrey",
+    "url": "https://www.hankley.co.uk"
+  },
+  {
+    "id": "st-andrews-old",
+    "name": "St Andrews Links (Old Course)",
+    "location": "St Andrews, Fife",
+    "lat": 56.3517,
+    "lng": -2.8181,
+    "holes": 18,
+    "county": "Fife",
+    "url": "https://www.standrews.com"
+  },
+  {
+    "id": "st-andrews-new",
+    "name": "St Andrews Links (New Course)",
+    "location": "St Andrews, Fife",
+    "lat": 56.3517,
+    "lng": -2.8181,
+    "holes": 18,
+    "county": "Fife",
+    "url": "https://www.standrews.com"
+  },
+  {
+    "id": "st-andrews-jubilee",
+    "name": "St Andrews Links (Jubilee Course)",
+    "location": "St Andrews, Fife",
+    "lat": 56.3517,
+    "lng": -2.8181,
+    "holes": 18,
+    "county": "Fife",
+    "url": "https://www.standrews.com"
+  },
+  {
+    "id": "st-andrews-eden",
+    "name": "St Andrews Links (Eden Course)",
+    "location": "St Andrews, Fife",
+    "lat": 56.3517,
+    "lng": -2.8181,
+    "holes": 18,
+    "county": "Fife",
+    "url": "https://www.standrews.com"
+  },
+  {
+    "id": "st-andrews-strathtyrum",
+    "name": "St Andrews Links (Strathtyrum Course)",
+    "location": "St Andrews, Fife",
+    "lat": 56.3517,
+    "lng": -2.8181,
+    "holes": 18,
+    "county": "Fife",
+    "url": "https://www.standrews.com"
+  },
+  {
+    "id": "st-andrews-balgove",
+    "name": "St Andrews Links (Balgove Course)",
+    "location": "St Andrews, Fife",
+    "lat": 56.3517,
+    "lng": -2.8181,
+    "holes": 9,
+    "county": "Fife",
+    "url": "https://www.standrews.com"
+  },
+  {
+    "id": "st-andrews-castle",
+    "name": "St Andrews Links (Castle Course)",
+    "location": "St Andrews, Fife",
+    "lat": 56.3279,
+    "lng": -2.7551,
+    "holes": 18,
+    "county": "Fife",
+    "url": "https://www.standrews.com"
+  },
+  {
+    "id": "st-andrews-craigtoun",
+    "name": "St Andrews Links (Craigtoun Course)",
+    "location": "Craigtoun Park, St Andrews, Fife",
+    "lat": 56.3255,
+    "lng": -2.84,
+    "holes": 18,
+    "county": "Fife",
+    "url": "https://www.standrews.com"
+  },
+  {
+    "id": "turnberry-ailsa",
+    "name": "Trump Turnberry (Ailsa Course)",
+    "location": "Turnberry, South Ayrshire",
+    "lat": 55.3272,
+    "lng": -4.8364,
+    "holes": 18,
+    "county": "South Ayrshire",
+    "url": "https://www.turnberry.co.uk"
+  },
+  {
+    "id": "turnberry-king-robert-the-bruce",
+    "name": "Trump Turnberry (King Robert the Bruce Course)",
+    "location": "Turnberry, South Ayrshire",
+    "lat": 55.3272,
+    "lng": -4.8364,
+    "holes": 18,
+    "county": "South Ayrshire",
+    "url": "https://www.turnberry.co.uk"
+  },
+  {
+    "id": "muirfield",
+    "name": "Muirfield (The Honourable Company of Edinburgh Golfers)",
+    "location": "Gullane, East Lothian",
+    "lat": 56.042,
+    "lng": -2.821,
+    "holes": 18,
+    "county": "East Lothian",
+    "url": "https://www.muirfield.org.uk"
+  },
+  {
+    "id": "royal-dornoch-championship",
+    "name": "Royal Dornoch Golf Club (Championship Course)",
+    "location": "Dornoch, Sutherland",
+    "lat": 57.879,
+    "lng": -4.023,
+    "holes": 18,
+    "county": "Highland",
+    "url": "https://www.royaldornoch.com"
+  },
+  {
+    "id": "royal-dornoch-struie",
+    "name": "Royal Dornoch Golf Club (Struie Course)",
+    "location": "Dornoch, Sutherland",
+    "lat": 57.879,
+    "lng": -4.023,
+    "holes": 18,
+    "county": "Highland",
+    "url": "https://www.royaldornoch.com"
+  },
+  {
+    "id": "royal-birkdale",
+    "name": "Royal Birkdale Golf Club",
+    "location": "Southport, Merseyside",
+    "lat": 53.622,
+    "lng": -3.033,
+    "holes": 18,
+    "county": "Merseyside",
+    "url": "https://www.royalbirkdale.com"
+  },
+  {
+    "id": "carnoustie-championship",
+    "name": "Carnoustie Golf Links (Championship Course)",
+    "location": "Carnoustie, Angus",
+    "lat": 56.4972,
+    "lng": -2.7169,
+    "holes": 18,
+    "county": "Angus",
+    "url": "https://www.carnoustiegolflinks.com"
+  },
+  {
+    "id": "carnoustie-burnside",
+    "name": "Carnoustie Golf Links (Burnside Course)",
+    "location": "Carnoustie, Angus",
+    "lat": 56.4972,
+    "lng": -2.7169,
+    "holes": 18,
+    "county": "Angus",
+    "url": "https://www.carnoustiegolflinks.com"
+  },
+  {
+    "id": "carnoustie-buddon",
+    "name": "Carnoustie Golf Links (Buddon Links)",
+    "location": "Carnoustie, Angus",
+    "lat": 56.4972,
+    "lng": -2.7169,
+    "holes": 18,
+    "county": "Angus",
+    "url": "https://www.carnoustiegolflinks.com"
+  },
+  {
+    "id": "sunningdale-old",
+    "name": "Sunningdale Golf Club (Old Course)",
+    "location": "Sunningdale, Berkshire",
+    "lat": 51.388,
+    "lng": -0.631,
+    "holes": 18,
+    "county": "Berkshire",
+    "url": "https://www.sunningdale-golfclub.co.uk"
+  },
+  {
+    "id": "sunningdale-new",
+    "name": "Sunningdale Golf Club (New Course)",
+    "location": "Sunningdale, Berkshire",
+    "lat": 51.388,
+    "lng": -0.631,
+    "holes": 18,
+    "county": "Berkshire",
+    "url": "https://www.sunningdale-golfclub.co.uk"
+  },
+  {
+    "id": "royal-st-georges",
+    "name": "Royal St George's Golf Club",
+    "location": "Sandwich, Kent",
+    "lat": 51.274,
+    "lng": 1.367,
+    "holes": 18,
+    "county": "Kent",
+    "url": "https://www.royalstgeorges.com"
+  },
+  {
+    "id": "woodhall-spa-hotchkin",
+    "name": "Woodhall Spa Golf Club (Hotchkin Course)",
+    "location": "Woodhall Spa, Lincolnshire",
+    "lat": 53.158,
+    "lng": -0.207,
+    "holes": 18,
+    "county": "Lincolnshire",
+    "url": "https://www.woodhallspagolf.com"
+  },
+  {
+    "id": "woodhall-spa-bracken",
+    "name": "Woodhall Spa Golf Club (Bracken Course)",
+    "location": "Woodhall Spa, Lincolnshire",
+    "lat": 53.158,
+    "lng": -0.207,
+    "holes": 18,
+    "county": "Lincolnshire",
+    "url": "https://www.woodhallspagolf.com"
+  },
+  {
+    "id": "royal-liverpool",
+    "name": "Royal Liverpool Golf Club",
+    "location": "Hoylake, Wirral, Merseyside",
+    "lat": 53.385,
+    "lng": -3.19,
+    "holes": 18,
+    "county": "Merseyside",
+    "url": "https://www.royal-liverpool-golf.com"
+  },
+  {
+    "id": "kingsbarns",
+    "name": "Kingsbarns Golf Links",
+    "location": "Kingsbarns, Fife",
+    "lat": 56.2991,
+    "lng": -2.6438,
+    "holes": 18,
+    "county": "Fife",
+    "url": "https://www.kingsbarns.com"
+  },
+  {
+    "id": "trump-scotland-old",
+    "name": "Trump International Scotland (Old Course)",
+    "location": "Balmedie, Aberdeenshire",
+    "lat": 57.2772,
+    "lng": -2.0214,
+    "holes": 18,
+    "county": "Aberdeenshire",
+    "url": "https://www.trumpgolfscotland.com"
+  },
+  {
+    "id": "trump-scotland-macleod",
+    "name": "Trump International Scotland (MacLeod Course)",
+    "location": "Balmedie, Aberdeenshire",
+    "lat": 57.2772,
+    "lng": -2.0214,
+    "holes": 18,
+    "county": "Aberdeenshire",
+    "url": "https://www.trumpgolfscotland.com"
+  },
+  {
+    "id": "royal-lytham",
+    "name": "Royal Lytham & St Annes Golf Club",
+    "location": "Lytham St Annes, Lancashire",
+    "lat": 53.7486,
+    "lng": -3.0139,
+    "holes": 18,
+    "county": "Lancashire",
+    "url": "https://www.royallytham.org"
+  },
+  {
+    "id": "royal-troon-old",
+    "name": "Royal Troon Golf Club (Old Course)",
+    "location": "Troon, South Ayrshire",
+    "lat": 55.5331,
+    "lng": -4.6528,
+    "holes": 18,
+    "county": "South Ayrshire",
+    "url": "https://www.royaltroon.co.uk"
+  },
+  {
+    "id": "royal-troon-portland",
+    "name": "Royal Troon Golf Club (Portland Course)",
+    "location": "Troon, South Ayrshire",
+    "lat": 55.5331,
+    "lng": -4.6528,
+    "holes": 18,
+    "county": "South Ayrshire",
+    "url": "https://www.royaltroon.co.uk"
+  },
+  {
+    "id": "royal-troon-craigend",
+    "name": "Royal Troon Golf Club (Craigend Course)",
+    "location": "Troon, South Ayrshire",
+    "lat": 55.5331,
+    "lng": -4.6528,
+    "holes": 9,
+    "county": "South Ayrshire",
+    "url": "https://www.royaltroon.co.uk"
+  },
+  {
+    "id": "royal-porthcawl",
+    "name": "Royal Porthcawl Golf Club",
+    "location": "Porthcawl, Bridgend",
+    "lat": 51.492,
+    "lng": -3.726,
+    "holes": 18,
+    "county": "Bridgend",
+    "url": "https://www.royalporthcawl.com"
+  },
+  {
+    "id": "cabot-highlands-castle-stuart",
+    "name": "Cabot Highlands (Castle Stuart Golf Links)",
+    "location": "Petty, near Inverness, Highland",
+    "lat": 57.5226,
+    "lng": -4.1116,
+    "holes": 18,
+    "county": "Highland",
+    "url": "https://cabot.com/highlands"
+  },
+  {
+    "id": "cabot-highlands-old-petty",
+    "name": "Cabot Highlands (Old Petty)",
+    "location": "Petty, near Inverness, Highland",
+    "lat": 57.528,
+    "lng": -4.095,
+    "holes": 18,
+    "county": "Highland",
+    "url": "https://cabot.com/highlands"
   }
 ]
