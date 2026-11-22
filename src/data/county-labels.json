@@ -1,0 +1,1685 @@
+[
+  {
+    "name": "Aberdeen",
+    "boxes": [
+      {"lat": 57.1683, "lng": -2.1708, "halfHeight": 0.0968, "aspect": 1},
+      {"lat": 57.1941, "lng": -2.1697, "halfHeight": 0.0497, "aspect": 2},
+      {"lat": 57.2007, "lng": -2.1709, "halfHeight": 0.0353, "aspect": 3},
+      {"lat": 57.2066, "lng": -2.1758, "halfHeight": 0.0257, "aspect": 4.5},
+      {"lat": 57.122, "lng": -2.2048, "halfHeight": 0.0201, "aspect": 7},
+      {"lat": 57.1186, "lng": -2.2097, "halfHeight": 0.0143, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Aberdeenshire",
+    "boxes": [
+      {"lat": 57.4783, "lng": -2.3533, "halfHeight": 0.3519, "aspect": 1},
+      {"lat": 57.367, "lng": -2.497, "halfHeight": 0.2315, "aspect": 2},
+      {"lat": 57.4004, "lng": -2.4751, "halfHeight": 0.1634, "aspect": 3},
+      {"lat": 57.438, "lng": -2.4155, "halfHeight": 0.1172, "aspect": 4.5},
+      {"lat": 57.0332, "lng": -3.0958, "halfHeight": 0.0892, "aspect": 7},
+      {"lat": 57.0326, "lng": -2.9605, "halfHeight": 0.0778, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Anglesey",
+    "boxes": [
+      {"lat": 53.3234, "lng": -4.4082, "halfHeight": 0.1307, "aspect": 1},
+      {"lat": 53.31, "lng": -4.3939, "halfHeight": 0.0795, "aspect": 2},
+      {"lat": 53.2624, "lng": -4.3507, "halfHeight": 0.0573, "aspect": 3},
+      {"lat": 53.2693, "lng": -4.3304, "halfHeight": 0.0457, "aspect": 4.5},
+      {"lat": 53.2772, "lng": -4.3227, "halfHeight": 0.0324, "aspect": 7},
+      {"lat": 53.2821, "lng": -4.3227, "halfHeight": 0.0238, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Angus",
+    "boxes": [
+      {"lat": 56.7599, "lng": -2.9101, "halfHeight": 0.2371, "aspect": 1},
+      {"lat": 56.801, "lng": -2.996, "halfHeight": 0.1615, "aspect": 2},
+      {"lat": 56.8224, "lng": -3.0129, "halfHeight": 0.1133, "aspect": 3},
+      {"lat": 56.7229, "lng": -2.9043, "halfHeight": 0.0831, "aspect": 4.5},
+      {"lat": 56.7119, "lng": -2.8705, "halfHeight": 0.0582, "aspect": 7},
+      {"lat": 56.7204, "lng": -2.878, "halfHeight": 0.0424, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Antrim",
+    "boxes": [
+      {"lat": 54.7011, "lng": -6.2411, "halfHeight": 0.139, "aspect": 1},
+      {"lat": 54.7226, "lng": -6.2512, "halfHeight": 0.0933, "aspect": 2},
+      {"lat": 54.7311, "lng": -6.268, "halfHeight": 0.0673, "aspect": 3},
+      {"lat": 54.7182, "lng": -6.268, "halfHeight": 0.0455, "aspect": 4.5},
+      {"lat": 54.7173, "lng": -6.2754, "halfHeight": 0.0303, "aspect": 7},
+      {"lat": 54.715, "lng": -6.2754, "halfHeight": 0.0217, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Ards",
+    "boxes": [
+      {"lat": 54.5932, "lng": -5.5803, "halfHeight": 0.0535, "aspect": 1},
+      {"lat": 54.5976, "lng": -5.5979, "halfHeight": 0.0364, "aspect": 2},
+      {"lat": 54.5981, "lng": -5.6331, "halfHeight": 0.0354, "aspect": 3},
+      {"lat": 54.5933, "lng": -5.6362, "halfHeight": 0.026, "aspect": 4.5},
+      {"lat": 54.5879, "lng": -5.6331, "halfHeight": 0.017, "aspect": 7},
+      {"lat": 54.5995, "lng": -5.6393, "halfHeight": 0.0119, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Argyll and Bute",
+    "boxes": [
+      {"lat": 56.336, "lng": -5.2557, "halfHeight": 0.1913, "aspect": 1},
+      {"lat": 56.36, "lng": -5.1423, "halfHeight": 0.1481, "aspect": 2},
+      {"lat": 56.385, "lng": -5.1423, "halfHeight": 0.1017, "aspect": 3},
+      {"lat": 56.3175, "lng": -5.1375, "halfHeight": 0.0713, "aspect": 4.5},
+      {"lat": 56.3087, "lng": -5.1755, "halfHeight": 0.0555, "aspect": 7},
+      {"lat": 56.2997, "lng": -5.1755, "halfHeight": 0.0393, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Armagh",
+    "boxes": [
+      {"lat": 54.3197, "lng": -6.6578, "halfHeight": 0.1445, "aspect": 1},
+      {"lat": 54.3228, "lng": -6.622, "halfHeight": 0.0932, "aspect": 2},
+      {"lat": 54.319, "lng": -6.6088, "halfHeight": 0.0732, "aspect": 3},
+      {"lat": 54.306, "lng": -6.6088, "halfHeight": 0.051, "aspect": 4.5},
+      {"lat": 54.3101, "lng": -6.6169, "halfHeight": 0.0341, "aspect": 7},
+      {"lat": 54.2966, "lng": -6.621, "halfHeight": 0.0236, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Ballymena",
+    "boxes": [
+      {"lat": 54.8893, "lng": -6.2234, "halfHeight": 0.1429, "aspect": 1},
+      {"lat": 54.8686, "lng": -6.2363, "halfHeight": 0.0987, "aspect": 2},
+      {"lat": 54.8508, "lng": -6.254, "halfHeight": 0.0721, "aspect": 3},
+      {"lat": 54.8361, "lng": -6.2496, "halfHeight": 0.0489, "aspect": 4.5},
+      {"lat": 54.8356, "lng": -6.2452, "halfHeight": 0.0322, "aspect": 7},
+      {"lat": 54.8361, "lng": -6.2187, "halfHeight": 0.0252, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Ballymoney",
+    "boxes": [
+      {"lat": 55.0538, "lng": -6.4637, "halfHeight": 0.1104, "aspect": 1},
+      {"lat": 55.0571, "lng": -6.4145, "halfHeight": 0.0817, "aspect": 2},
+      {"lat": 55.05, "lng": -6.4079, "halfHeight": 0.0584, "aspect": 3},
+      {"lat": 55.0422, "lng": -6.4063, "halfHeight": 0.0393, "aspect": 4.5},
+      {"lat": 55.0386, "lng": -6.3964, "halfHeight": 0.026, "aspect": 7},
+      {"lat": 55.037, "lng": -6.3964, "halfHeight": 0.0187, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Banbridge",
+    "boxes": [
+      {"lat": 54.3303, "lng": -6.18, "halfHeight": 0.1114, "aspect": 1},
+      {"lat": 54.3214, "lng": -6.1587, "halfHeight": 0.0937, "aspect": 2},
+      {"lat": 54.3339, "lng": -6.1733, "halfHeight": 0.0672, "aspect": 3},
+      {"lat": 54.3433, "lng": -6.1715, "halfHeight": 0.0446, "aspect": 4.5},
+      {"lat": 54.308, "lng": -6.1715, "halfHeight": 0.0291, "aspect": 7},
+      {"lat": 54.3638, "lng": -6.1642, "halfHeight": 0.0209, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Bedfordshire",
+    "boxes": [
+      {"lat": 52.0926, "lng": -0.4133, "halfHeight": 0.1607, "aspect": 1},
+      {"lat": 52.0749, "lng": -0.3899, "halfHeight": 0.092, "aspect": 2},
+      {"lat": 52.0889, "lng": -0.3769, "halfHeight": 0.0657, "aspect": 3},
+      {"lat": 52.0998, "lng": -0.3616, "halfHeight": 0.0472, "aspect": 4.5},
+      {"lat": 52.1094, "lng": -0.3573, "halfHeight": 0.031, "aspect": 7},
+      {"lat": 52.1159, "lng": -0.3573, "halfHeight": 0.0221, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Belfast",
+    "boxes": [
+      {"lat": 54.6134, "lng": -5.9799, "halfHeight": 0.0523, "aspect": 1},
+      {"lat": 54.5985, "lng": -5.9713, "halfHeight": 0.0303, "aspect": 2},
+      {"lat": 54.5921, "lng": -5.9632, "halfHeight": 0.0215, "aspect": 3},
+      {"lat": 54.5948, "lng": -5.9531, "halfHeight": 0.0172, "aspect": 4.5},
+      {"lat": 54.5969, "lng": -5.941, "halfHeight": 0.0131, "aspect": 7},
+      {"lat": 54.5993, "lng": -5.9289, "halfHeight": 0.0095, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Berkshire",
+    "boxes": [
+      {"lat": 51.4516, "lng": -1.3807, "halfHeight": 0.1299, "aspect": 1},
+      {"lat": 51.4375, "lng": -1.3188, "halfHeight": 0.1011, "aspect": 2},
+      {"lat": 51.4268, "lng": -1.2765, "halfHeight": 0.0808, "aspect": 3},
+      {"lat": 51.4142, "lng": -1.0401, "halfHeight": 0.0611, "aspect": 4.5},
+      {"lat": 51.4151, "lng": -1.0945, "halfHeight": 0.0605, "aspect": 7},
+      {"lat": 51.4229, "lng": -1.0652, "halfHeight": 0.0454, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Blaenau Gwent",
+    "boxes": [
+      {"lat": 51.7682, "lng": -3.1832, "halfHeight": 0.0475, "aspect": 1},
+      {"lat": 51.7756, "lng": -3.1898, "halfHeight": 0.0304, "aspect": 2},
+      {"lat": 51.7793, "lng": -3.1913, "halfHeight": 0.0212, "aspect": 3},
+      {"lat": 51.7855, "lng": -3.1971, "halfHeight": 0.0151, "aspect": 4.5},
+      {"lat": 51.7905, "lng": -3.2058, "halfHeight": 0.0101, "aspect": 7},
+      {"lat": 51.7859, "lng": -3.2, "halfHeight": 0.0072, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Bridgend",
+    "boxes": [
+      {"lat": 51.5592, "lng": -3.5611, "halfHeight": 0.0789, "aspect": 1},
+      {"lat": 51.5694, "lng": -3.5549, "halfHeight": 0.0426, "aspect": 2},
+      {"lat": 51.5029, "lng": -3.6251, "halfHeight": 0.0331, "aspect": 3},
+      {"lat": 51.5101, "lng": -3.6319, "halfHeight": 0.0245, "aspect": 4.5},
+      {"lat": 51.5143, "lng": -3.6206, "halfHeight": 0.0173, "aspect": 7},
+      {"lat": 51.5174, "lng": -3.6161, "halfHeight": 0.0126, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Bristol",
+    "boxes": [
+      {"lat": 51.4445, "lng": -2.5782, "halfHeight": 0.0526, "aspect": 1},
+      {"lat": 51.4548, "lng": -2.5757, "halfHeight": 0.0277, "aspect": 2},
+      {"lat": 51.4618, "lng": -2.579, "halfHeight": 0.0195, "aspect": 3},
+      {"lat": 51.4706, "lng": -2.5938, "halfHeight": 0.0141, "aspect": 4.5},
+      {"lat": 51.4726, "lng": -2.5971, "halfHeight": 0.0099, "aspect": 7},
+      {"lat": 51.4763, "lng": -2.6103, "halfHeight": 0.0073, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Buckinghamshire",
+    "boxes": [
+      {"lat": 51.9207, "lng": -0.8884, "halfHeight": 0.1584, "aspect": 1},
+      {"lat": 51.9631, "lng": -0.8668, "halfHeight": 0.0901, "aspect": 2},
+      {"lat": 51.6224, "lng": -0.7174, "halfHeight": 0.0638, "aspect": 3},
+      {"lat": 51.9829, "lng": -0.8537, "halfHeight": 0.0443, "aspect": 4.5},
+      {"lat": 51.8724, "lng": -0.8537, "halfHeight": 0.029, "aspect": 7},
+      {"lat": 51.863, "lng": -0.817, "halfHeight": 0.0212, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Caerphilly",
+    "boxes": [
+      {"lat": 51.6395, "lng": -3.1806, "halfHeight": 0.0809, "aspect": 1},
+      {"lat": 51.6403, "lng": -3.1759, "halfHeight": 0.0498, "aspect": 2},
+      {"lat": 51.6361, "lng": -3.1783, "halfHeight": 0.034, "aspect": 3},
+      {"lat": 51.6407, "lng": -3.1806, "halfHeight": 0.0233, "aspect": 4.5},
+      {"lat": 51.6075, "lng": -3.1641, "halfHeight": 0.0148, "aspect": 7},
+      {"lat": 51.607, "lng": -3.1641, "halfHeight": 0.0107, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Cambridgeshire",
+    "boxes": [
+      {"lat": 52.3173, "lng": 0.0711, "halfHeight": 0.2781, "aspect": 1},
+      {"lat": 52.336, "lng": 0.0012, "halfHeight": 0.1739, "aspect": 2},
+      {"lat": 52.3656, "lng": 0.0189, "halfHeight": 0.1225, "aspect": 3},
+      {"lat": 52.3452, "lng": -0.0106, "halfHeight": 0.0885, "aspect": 4.5},
+      {"lat": 52.3392, "lng": -0.0185, "halfHeight": 0.0601, "aspect": 7},
+      {"lat": 52.3323, "lng": -0.0185, "halfHeight": 0.0433, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Cardiff",
+    "boxes": [
+      {"lat": 51.5014, "lng": -3.1929, "halfHeight": 0.0536, "aspect": 1},
+      {"lat": 51.4989, "lng": -3.2014, "halfHeight": 0.0337, "aspect": 2},
+      {"lat": 51.5155, "lng": -3.1767, "halfHeight": 0.0253, "aspect": 3},
+      {"lat": 51.5185, "lng": -3.168, "halfHeight": 0.0188, "aspect": 4.5},
+      {"lat": 51.5162, "lng": -3.1715, "halfHeight": 0.0131, "aspect": 7},
+      {"lat": 51.5167, "lng": -3.1715, "halfHeight": 0.0095, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Carlow",
+    "boxes": [
+      {"lat": 52.727, "lng": -6.8324, "halfHeight": 0.1429, "aspect": 1},
+      {"lat": 52.7563, "lng": -6.8528, "halfHeight": 0.0822, "aspect": 2},
+      {"lat": 52.7494, "lng": -6.8715, "halfHeight": 0.0612, "aspect": 3},
+      {"lat": 52.7402, "lng": -6.8645, "halfHeight": 0.0456, "aspect": 4.5},
+      {"lat": 52.7366, "lng": -6.8598, "halfHeight": 0.0308, "aspect": 7},
+      {"lat": 52.7341, "lng": -6.8598, "halfHeight": 0.022, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Carmarthenshire",
+    "boxes": [
+      {"lat": 51.8978, "lng": -4.1416, "halfHeight": 0.2126, "aspect": 1},
+      {"lat": 51.9175, "lng": -4.1368, "halfHeight": 0.1791, "aspect": 2},
+      {"lat": 51.9453, "lng": -4.1082, "halfHeight": 0.1287, "aspect": 3},
+      {"lat": 51.8573, "lng": -4.2006, "halfHeight": 0.092, "aspect": 4.5},
+      {"lat": 51.8674, "lng": -4.227, "halfHeight": 0.0663, "aspect": 7},
+      {"lat": 51.8618, "lng": -4.2402, "halfHeight": 0.048, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Carrickfergus",
+    "boxes": [
+      {"lat": 54.7419, "lng": -5.8411, "halfHeight": 0.0479, "aspect": 1},
+      {"lat": 54.7393, "lng": -5.8241, "halfHeight": 0.0326, "aspect": 2},
+      {"lat": 54.7382, "lng": -5.8174, "halfHeight": 0.0244, "aspect": 3},
+      {"lat": 54.7417, "lng": -5.809, "halfHeight": 0.0184, "aspect": 4.5},
+      {"lat": 54.7451, "lng": -5.8057, "halfHeight": 0.0123, "aspect": 7},
+      {"lat": 54.7456, "lng": -5.799, "halfHeight": 0.0088, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Castlereagh",
+    "boxes": [
+      {"lat": 54.5475, "lng": -5.8658, "halfHeight": 0.0428, "aspect": 1},
+      {"lat": 54.5525, "lng": -5.8635, "halfHeight": 0.0286, "aspect": 2},
+      {"lat": 54.5547, "lng": -5.8603, "halfHeight": 0.0215, "aspect": 3},
+      {"lat": 54.5559, "lng": -5.8666, "halfHeight": 0.0156, "aspect": 4.5},
+      {"lat": 54.5555, "lng": -5.8666, "halfHeight": 0.0105, "aspect": 7},
+      {"lat": 54.5567, "lng": -5.8729, "halfHeight": 0.0076, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Cavan",
+    "boxes": [
+      {"lat": 53.9404, "lng": -7.2204, "halfHeight": 0.224, "aspect": 1},
+      {"lat": 53.9577, "lng": -7.2448, "halfHeight": 0.1471, "aspect": 2},
+      {"lat": 53.9545, "lng": -7.2206, "halfHeight": 0.107, "aspect": 3},
+      {"lat": 53.9529, "lng": -7.2206, "halfHeight": 0.0778, "aspect": 4.5},
+      {"lat": 53.9412, "lng": -7.2105, "halfHeight": 0.0523, "aspect": 7},
+      {"lat": 53.9338, "lng": -7.2054, "halfHeight": 0.0373, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Ceredigion",
+    "boxes": [
+      {"lat": 52.2365, "lng": -3.9397, "halfHeight": 0.1836, "aspect": 1},
+      {"lat": 52.1954, "lng": -3.9884, "halfHeight": 0.1162, "aspect": 2},
+      {"lat": 52.178, "lng": -4.0201, "halfHeight": 0.088, "aspect": 3},
+      {"lat": 52.1668, "lng": -4.0651, "halfHeight": 0.0683, "aspect": 4.5},
+      {"lat": 52.1541, "lng": -4.0855, "halfHeight": 0.0468, "aspect": 7},
+      {"lat": 52.1457, "lng": -4.1019, "halfHeight": 0.0342, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Cheshire",
+    "boxes": [
+      {"lat": 53.156, "lng": -2.6107, "halfHeight": 0.2351, "aspect": 1},
+      {"lat": 53.1901, "lng": -2.5631, "halfHeight": 0.1634, "aspect": 2},
+      {"lat": 53.2132, "lng": -2.5405, "halfHeight": 0.1235, "aspect": 3},
+      {"lat": 53.2315, "lng": -2.4788, "halfHeight": 0.0949, "aspect": 4.5},
+      {"lat": 53.2469, "lng": -2.4693, "halfHeight": 0.0675, "aspect": 7},
+      {"lat": 53.2581, "lng": -2.4931, "halfHeight": 0.049, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Clackmannanshire",
+    "boxes": [
+      {"lat": 56.1455, "lng": -3.723, "halfHeight": 0.075, "aspect": 1},
+      {"lat": 56.1422, "lng": -3.7411, "halfHeight": 0.0465, "aspect": 2},
+      {"lat": 56.1315, "lng": -3.7483, "halfHeight": 0.0328, "aspect": 3},
+      {"lat": 56.1284, "lng": -3.7507, "halfHeight": 0.0228, "aspect": 4.5},
+      {"lat": 56.1764, "lng": -3.7123, "halfHeight": 0.0163, "aspect": 7},
+      {"lat": 56.1799, "lng": -3.6979, "halfHeight": 0.0121, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Clare",
+    "boxes": [
+      {"lat": 52.9154, "lng": -9.1223, "halfHeight": 0.2317, "aspect": 1},
+      {"lat": 52.8721, "lng": -8.971, "halfHeight": 0.16, "aspect": 2},
+      {"lat": 52.8773, "lng": -8.903, "halfHeight": 0.1503, "aspect": 3},
+      {"lat": 52.8384, "lng": -8.9224, "halfHeight": 0.1034, "aspect": 4.5},
+      {"lat": 52.8311, "lng": -8.9386, "halfHeight": 0.0699, "aspect": 7},
+      {"lat": 52.9385, "lng": -8.8415, "halfHeight": 0.0499, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Coleraine",
+    "boxes": [
+      {"lat": 55.0887, "lng": -6.7102, "halfHeight": 0.0962, "aspect": 1},
+      {"lat": 55.1403, "lng": -6.7007, "halfHeight": 0.0615, "aspect": 2},
+      {"lat": 55.1419, "lng": -6.7075, "halfHeight": 0.0439, "aspect": 3},
+      {"lat": 55.1573, "lng": -6.6966, "halfHeight": 0.0314, "aspect": 4.5},
+      {"lat": 55.1565, "lng": -6.6831, "halfHeight": 0.0223, "aspect": 7},
+      {"lat": 55.1529, "lng": -6.6831, "halfHeight": 0.0157, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Conwy",
+    "boxes": [
+      {"lat": 53.1151, "lng": -3.7564, "halfHeight": 0.1704, "aspect": 1},
+      {"lat": 53.2112, "lng": -3.7227, "halfHeight": 0.1019, "aspect": 2},
+      {"lat": 53.1904, "lng": -3.711, "halfHeight": 0.0719, "aspect": 3},
+      {"lat": 53.0398, "lng": -3.7302, "halfHeight": 0.0512, "aspect": 4.5},
+      {"lat": 53.0304, "lng": -3.7217, "halfHeight": 0.0352, "aspect": 7},
+      {"lat": 53.0249, "lng": -3.7174, "halfHeight": 0.0247, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Cork",
+    "boxes": [
+      {"lat": 51.991, "lng": -8.7734, "halfHeight": 0.3444, "aspect": 1},
+      {"lat": 52.0876, "lng": -8.6329, "halfHeight": 0.2424, "aspect": 2},
+      {"lat": 52.0136, "lng": -8.59, "halfHeight": 0.176, "aspect": 3},
+      {"lat": 51.9797, "lng": -8.5629, "halfHeight": 0.1234, "aspect": 4.5},
+      {"lat": 51.9564, "lng": -8.5245, "halfHeight": 0.0848, "aspect": 7},
+      {"lat": 51.9412, "lng": -8.5471, "halfHeight": 0.0609, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Cornwall",
+    "boxes": [
+      {"lat": 50.5056, "lng": -4.5413, "halfHeight": 0.2114, "aspect": 1},
+      {"lat": 50.4876, "lng": -4.5644, "halfHeight": 0.1403, "aspect": 2},
+      {"lat": 50.4423, "lng": -4.6862, "halfHeight": 0.113, "aspect": 3},
+      {"lat": 50.4538, "lng": -4.6333, "halfHeight": 0.0878, "aspect": 4.5},
+      {"lat": 50.4339, "lng": -4.6375, "halfHeight": 0.0566, "aspect": 7},
+      {"lat": 50.4238, "lng": -4.6375, "halfHeight": 0.0401, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Craigavon",
+    "boxes": [
+      {"lat": 54.4828, "lng": -6.3875, "halfHeight": 0.1119, "aspect": 1},
+      {"lat": 54.4713, "lng": -6.3882, "halfHeight": 0.0674, "aspect": 2},
+      {"lat": 54.4829, "lng": -6.3999, "halfHeight": 0.0485, "aspect": 3},
+      {"lat": 54.4922, "lng": -6.4087, "halfHeight": 0.0337, "aspect": 4.5},
+      {"lat": 54.4921, "lng": -6.4087, "halfHeight": 0.0222, "aspect": 7},
+      {"lat": 54.498, "lng": -6.4087, "halfHeight": 0.0156, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Cumbria",
+    "boxes": [
+      {"lat": 54.5352, "lng": -2.8659, "halfHeight": 0.4671, "aspect": 1},
+      {"lat": 54.5655, "lng": -2.921, "halfHeight": 0.283, "aspect": 2},
+      {"lat": 54.5509, "lng": -2.9181, "halfHeight": 0.204, "aspect": 3},
+      {"lat": 54.5425, "lng": -2.9355, "halfHeight": 0.14, "aspect": 4.5},
+      {"lat": 54.5037, "lng": -2.8862, "halfHeight": 0.0947, "aspect": 7},
+      {"lat": 54.4985, "lng": -2.8804, "halfHeight": 0.0682, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Denbighshire",
+    "boxes": [
+      {"lat": 53.0611, "lng": -3.3242, "halfHeight": 0.1371, "aspect": 1},
+      {"lat": 53.0363, "lng": -3.3021, "halfHeight": 0.0803, "aspect": 2},
+      {"lat": 53.052, "lng": -3.3041, "halfHeight": 0.0543, "aspect": 3},
+      {"lat": 53.1036, "lng": -3.352, "halfHeight": 0.0385, "aspect": 4.5},
+      {"lat": 53.0978, "lng": -3.3558, "halfHeight": 0.027, "aspect": 7},
+      {"lat": 53.0948, "lng": -3.3558, "halfHeight": 0.0196, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Derbyshire",
+    "boxes": [
+      {"lat": 53.1607, "lng": -1.5467, "halfHeight": 0.2153, "aspect": 1},
+      {"lat": 53.216, "lng": -1.5543, "halfHeight": 0.1221, "aspect": 2},
+      {"lat": 53.2275, "lng": -1.5174, "halfHeight": 0.1035, "aspect": 3},
+      {"lat": 53.2406, "lng": -1.5593, "halfHeight": 0.0805, "aspect": 4.5},
+      {"lat": 53.2555, "lng": -1.5828, "halfHeight": 0.0553, "aspect": 7},
+      {"lat": 53.2659, "lng": -1.5962, "halfHeight": 0.0395, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Derry",
+    "boxes": [
+      {"lat": 54.9782, "lng": -7.2725, "halfHeight": 0.0972, "aspect": 1},
+      {"lat": 54.9736, "lng": -7.2717, "halfHeight": 0.0619, "aspect": 2},
+      {"lat": 54.9562, "lng": -7.2415, "halfHeight": 0.0476, "aspect": 3},
+      {"lat": 54.9613, "lng": -7.2511, "halfHeight": 0.034, "aspect": 4.5},
+      {"lat": 54.9563, "lng": -7.2511, "halfHeight": 0.0219, "aspect": 7},
+      {"lat": 54.951, "lng": -7.2511, "halfHeight": 0.0154, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Devon",
+    "boxes": [
+      {"lat": 50.773, "lng": -3.8708, "halfHeight": 0.3709, "aspect": 1},
+      {"lat": 50.8412, "lng": -3.8635, "halfHeight": 0.2454, "aspect": 2},
+      {"lat": 50.8184, "lng": -3.7687, "halfHeight": 0.1969, "aspect": 3},
+      {"lat": 50.8052, "lng": -3.7037, "halfHeight": 0.1449, "aspect": 4.5},
+      {"lat": 50.7881, "lng": -3.6651, "halfHeight": 0.1001, "aspect": 7},
+      {"lat": 50.78, "lng": -3.6616, "halfHeight": 0.0712, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Donegal",
+    "boxes": [
+      {"lat": 54.9195, "lng": -7.9929, "halfHeight": 0.3119, "aspect": 1},
+      {"lat": 54.8497, "lng": -7.9361, "halfHeight": 0.182, "aspect": 2},
+      {"lat": 54.8791, "lng": -7.9198, "halfHeight": 0.1306, "aspect": 3},
+      {"lat": 54.899, "lng": -7.8908, "halfHeight": 0.0933, "aspect": 4.5},
+      {"lat": 54.9186, "lng": -7.8835, "halfHeight": 0.0621, "aspect": 7},
+      {"lat": 54.8057, "lng": -7.9924, "halfHeight": 0.0443, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Dorset",
+    "boxes": [
+      {"lat": 50.7996, "lng": -2.3481, "halfHeight": 0.2402, "aspect": 1},
+      {"lat": 50.846, "lng": -2.2562, "halfHeight": 0.1673, "aspect": 2},
+      {"lat": 50.8303, "lng": -2.2238, "halfHeight": 0.1281, "aspect": 3},
+      {"lat": 50.8035, "lng": -2.3035, "halfHeight": 0.1004, "aspect": 4.5},
+      {"lat": 50.7918, "lng": -2.3459, "halfHeight": 0.0766, "aspect": 7},
+      {"lat": 50.8035, "lng": -2.3409, "halfHeight": 0.0532, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Down",
+    "boxes": [
+      {"lat": 54.3193, "lng": -5.8237, "halfHeight": 0.1143, "aspect": 1},
+      {"lat": 54.3043, "lng": -5.7822, "halfHeight": 0.082, "aspect": 2},
+      {"lat": 54.3155, "lng": -5.7613, "halfHeight": 0.0621, "aspect": 3},
+      {"lat": 54.3262, "lng": -5.755, "halfHeight": 0.0443, "aspect": 4.5},
+      {"lat": 54.3295, "lng": -5.755, "halfHeight": 0.0295, "aspect": 7},
+      {"lat": 54.3325, "lng": -5.7592, "halfHeight": 0.0207, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Dublin",
+    "boxes": [
+      {"lat": 53.2992, "lng": -6.3432, "halfHeight": 0.1248, "aspect": 1},
+      {"lat": 53.2847, "lng": -6.3441, "halfHeight": 0.0738, "aspect": 2},
+      {"lat": 53.2588, "lng": -6.2956, "halfHeight": 0.0576, "aspect": 3},
+      {"lat": 53.2681, "lng": -6.3161, "halfHeight": 0.0424, "aspect": 4.5},
+      {"lat": 53.2696, "lng": -6.3049, "halfHeight": 0.0284, "aspect": 7},
+      {"lat": 53.2758, "lng": -6.3049, "halfHeight": 0.02, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Dumfries and Galloway",
+    "boxes": [
+      {"lat": 55.0857, "lng": -3.9649, "halfHeight": 0.3478, "aspect": 1},
+      {"lat": 55.1426, "lng": -3.583, "halfHeight": 0.2567, "aspect": 2},
+      {"lat": 55.137, "lng": -3.6923, "halfHeight": 0.2188, "aspect": 3},
+      {"lat": 55.1685, "lng": -3.6285, "halfHeight": 0.1602, "aspect": 4.5},
+      {"lat": 55.0751, "lng": -3.8243, "halfHeight": 0.1125, "aspect": 7},
+      {"lat": 55.0908, "lng": -3.8243, "halfHeight": 0.0793, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Dundee",
+    "boxes": [
+      {"lat": 56.4929, "lng": -2.8884, "halfHeight": 0.0425, "aspect": 1},
+      {"lat": 56.4852, "lng": -2.96, "halfHeight": 0.0355, "aspect": 2},
+      {"lat": 56.4867, "lng": -2.9409, "halfHeight": 0.0319, "aspect": 3},
+      {"lat": 56.4852, "lng": -2.949, "halfHeight": 0.0258, "aspect": 4.5},
+      {"lat": 56.4852, "lng": -2.949, "halfHeight": 0.0167, "aspect": 7},
+      {"lat": 56.4822, "lng": -2.949, "halfHeight": 0.012, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Dungannon",
+    "boxes": [
+      {"lat": 54.4846, "lng": -6.843, "halfHeight": 0.1227, "aspect": 1},
+      {"lat": 54.4717, "lng": -6.866, "halfHeight": 0.0807, "aspect": 2},
+      {"lat": 54.5016, "lng": -6.7778, "halfHeight": 0.0646, "aspect": 3},
+      {"lat": 54.4918, "lng": -6.8056, "halfHeight": 0.0481, "aspect": 4.5},
+      {"lat": 54.435, "lng": -6.9656, "halfHeight": 0.0364, "aspect": 7},
+      {"lat": 54.4289, "lng": -7.0048, "halfHeight": 0.0269, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Durham",
+    "boxes": [
+      {"lat": 54.683, "lng": -1.8064, "halfHeight": 0.2611, "aspect": 1},
+      {"lat": 54.6635, "lng": -1.749, "halfHeight": 0.2228, "aspect": 2},
+      {"lat": 54.6795, "lng": -1.785, "halfHeight": 0.164, "aspect": 3},
+      {"lat": 54.6453, "lng": -1.7409, "halfHeight": 0.1161, "aspect": 4.5},
+      {"lat": 54.6646, "lng": -1.7409, "halfHeight": 0.0764, "aspect": 7},
+      {"lat": 54.6741, "lng": -1.7316, "halfHeight": 0.0539, "aspect": 10}
+    ]
+  },
+  {
+    "name": "East Ayrshire",
+    "boxes": [
+      {"lat": 55.4481, "lng": -4.2623, "halfHeight": 0.1643, "aspect": 1},
+      {"lat": 55.493, "lng": -4.2182, "halfHeight": 0.1044, "aspect": 2},
+      {"lat": 55.5095, "lng": -4.2026, "halfHeight": 0.0742, "aspect": 3},
+      {"lat": 55.5233, "lng": -4.2, "halfHeight": 0.0504, "aspect": 4.5},
+      {"lat": 55.5259, "lng": -4.1948, "halfHeight": 0.033, "aspect": 7},
+      {"lat": 55.4464, "lng": -4.2415, "halfHeight": 0.0233, "aspect": 10}
+    ]
+  },
+  {
+    "name": "East Dunbartonshire",
+    "boxes": [
+      {"lat": 55.9555, "lng": -4.1958, "halfHeight": 0.0692, "aspect": 1},
+      {"lat": 55.9378, "lng": -4.1962, "halfHeight": 0.0387, "aspect": 2},
+      {"lat": 55.9365, "lng": -4.2482, "halfHeight": 0.0368, "aspect": 3},
+      {"lat": 55.9343, "lng": -4.2076, "halfHeight": 0.0329, "aspect": 4.5},
+      {"lat": 55.9375, "lng": -4.2025, "halfHeight": 0.0227, "aspect": 7},
+      {"lat": 55.9284, "lng": -4.2025, "halfHeight": 0.0154, "aspect": 10}
+    ]
+  },
+  {
+    "name": "East Lothian",
+    "boxes": [
+      {"lat": 55.9291, "lng": -2.727, "halfHeight": 0.143, "aspect": 1},
+      {"lat": 55.9253, "lng": -2.6831, "halfHeight": 0.1121, "aspect": 2},
+      {"lat": 55.9217, "lng": -2.6886, "halfHeight": 0.0841, "aspect": 3},
+      {"lat": 55.9255, "lng": -2.7078, "halfHeight": 0.0604, "aspect": 4.5},
+      {"lat": 55.9277, "lng": -2.716, "halfHeight": 0.042, "aspect": 7},
+      {"lat": 55.9318, "lng": -2.7215, "halfHeight": 0.0312, "aspect": 10}
+    ]
+  },
+  {
+    "name": "East Renfrewshire",
+    "boxes": [
+      {"lat": 55.7572, "lng": -4.3237, "halfHeight": 0.0636, "aspect": 1},
+      {"lat": 55.7606, "lng": -4.351, "halfHeight": 0.0458, "aspect": 2},
+      {"lat": 55.7607, "lng": -4.3638, "halfHeight": 0.0347, "aspect": 3},
+      {"lat": 55.7616, "lng": -4.3732, "halfHeight": 0.0256, "aspect": 4.5},
+      {"lat": 55.7605, "lng": -4.3825, "halfHeight": 0.0174, "aspect": 7},
+      {"lat": 55.7616, "lng": -4.3872, "halfHeight": 0.0122, "aspect": 10}
+    ]
+  },
+  {
+    "name": "East Riding of Yorkshire",
+    "boxes": [
+      {"lat": 53.8699, "lng": -0.6076, "halfHeight": 0.2335, "aspect": 1},
+      {"lat": 53.8494, "lng": -0.5506, "halfHeight": 0.1846, "aspect": 2},
+      {"lat": 53.8166, "lng": -0.5321, "halfHeight": 0.1293, "aspect": 3},
+      {"lat": 53.7942, "lng": -0.5075, "halfHeight": 0.0915, "aspect": 4.5},
+      {"lat": 53.7789, "lng": -0.4903, "halfHeight": 0.0614, "aspect": 7},
+      {"lat": 53.7666, "lng": -0.4903, "halfHeight": 0.0439, "aspect": 10}
+    ]
+  },
+  {
+    "name": "East Sussex",
+    "boxes": [
+      {"lat": 50.9529, "lng": 0.2132, "halfHeight": 0.1942, "aspect": 1},
+      {"lat": 50.9328, "lng": 0.266, "halfHeight": 0.1356, "aspect": 2},
+      {"lat": 50.9315, "lng": 0.3167, "halfHeight": 0.1079, "aspect": 3},
+      {"lat": 50.9264, "lng": 0.2908, "halfHeight": 0.0841, "aspect": 4.5},
+      {"lat": 50.9402, "lng": 0.3124, "halfHeight": 0.058, "aspect": 7},
+      {"lat": 50.9514, "lng": 0.3296, "halfHeight": 0.0423, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Edinburgh",
+    "boxes": [
+      {"lat": 55.9236, "lng": -3.3004, "halfHeight": 0.0887, "aspect": 1},
+      {"lat": 55.9281, "lng": -3.2543, "halfHeight": 0.0687, "aspect": 2},
+      {"lat": 55.9335, "lng": -3.2732, "halfHeight": 0.0537, "aspect": 3},
+      {"lat": 55.9257, "lng": -3.2616, "halfHeight": 0.0386, "aspect": 4.5},
+      {"lat": 55.9342, "lng": -3.2703, "halfHeight": 0.0256, "aspect": 7},
+      {"lat": 55.924, "lng": -3.2645, "halfHeight": 0.018, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Essex",
+    "boxes": [
+      {"lat": 51.8794, "lng": 0.4532, "halfHeight": 0.2533, "aspect": 1},
+      {"lat": 51.851, "lng": 0.5371, "halfHeight": 0.168, "aspect": 2},
+      {"lat": 51.8796, "lng": 0.5638, "halfHeight": 0.1216, "aspect": 3},
+      {"lat": 51.8989, "lng": 0.6019, "halfHeight": 0.0895, "aspect": 4.5},
+      {"lat": 51.8969, "lng": 0.6985, "halfHeight": 0.0714, "aspect": 7},
+      {"lat": 51.9107, "lng": 0.6985, "halfHeight": 0.0502, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Falkirk",
+    "boxes": [
+      {"lat": 55.9827, "lng": -3.778, "halfHeight": 0.0823, "aspect": 1},
+      {"lat": 55.9938, "lng": -3.8035, "halfHeight": 0.0603, "aspect": 2},
+      {"lat": 55.9844, "lng": -3.7876, "halfHeight": 0.0453, "aspect": 3},
+      {"lat": 55.99, "lng": -3.7817, "halfHeight": 0.0341, "aspect": 4.5},
+      {"lat": 55.995, "lng": -3.7738, "halfHeight": 0.0232, "aspect": 7},
+      {"lat": 56.0001, "lng": -3.7817, "halfHeight": 0.0181, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Fermanagh",
+    "boxes": [
+      {"lat": 54.4208, "lng": -7.7714, "halfHeight": 0.1917, "aspect": 1},
+      {"lat": 54.2852, "lng": -7.5606, "halfHeight": 0.1383, "aspect": 2},
+      {"lat": 54.2865, "lng": -7.5676, "halfHeight": 0.1008, "aspect": 3},
+      {"lat": 54.2695, "lng": -7.5395, "halfHeight": 0.073, "aspect": 4.5},
+      {"lat": 54.2574, "lng": -7.5275, "halfHeight": 0.049, "aspect": 7},
+      {"lat": 54.3828, "lng": -7.6921, "halfHeight": 0.0352, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Fife",
+    "boxes": [
+      {"lat": 56.2942, "lng": -2.9892, "halfHeight": 0.1512, "aspect": 1},
+      {"lat": 56.2752, "lng": -3.0085, "halfHeight": 0.1163, "aspect": 2},
+      {"lat": 56.2745, "lng": -2.9583, "halfHeight": 0.0945, "aspect": 3},
+      {"lat": 56.2637, "lng": -2.9674, "halfHeight": 0.0685, "aspect": 4.5},
+      {"lat": 56.2743, "lng": -2.9606, "halfHeight": 0.0472, "aspect": 7},
+      {"lat": 56.2591, "lng": -2.988, "halfHeight": 0.035, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Flintshire",
+    "boxes": [
+      {"lat": 53.1828, "lng": -3.0922, "halfHeight": 0.0852, "aspect": 1},
+      {"lat": 53.1944, "lng": -3.1281, "halfHeight": 0.0665, "aspect": 2},
+      {"lat": 53.1892, "lng": -3.1189, "halfHeight": 0.0512, "aspect": 3},
+      {"lat": 53.182, "lng": -3.106, "halfHeight": 0.0371, "aspect": 4.5},
+      {"lat": 53.1794, "lng": -3.1023, "halfHeight": 0.0255, "aspect": 7},
+      {"lat": 53.184, "lng": -3.1097, "halfHeight": 0.0183, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Galway",
+    "boxes": [
+      {"lat": 53.2611, "lng": -8.5743, "halfHeight": 0.3207, "aspect": 1},
+      {"lat": 53.3955, "lng": -8.6835, "halfHeight": 0.1997, "aspect": 2},
+      {"lat": 53.375, "lng": -9.0336, "halfHeight": 0.167, "aspect": 3},
+      {"lat": 53.3681, "lng": -8.9027, "halfHeight": 0.1437, "aspect": 4.5},
+      {"lat": 53.3452, "lng": -8.894, "halfHeight": 0.0936, "aspect": 7},
+      {"lat": 53.4338, "lng": -9.0947, "halfHeight": 0.0687, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Glasgow",
+    "boxes": [
+      {"lat": 55.8467, "lng": -4.2793, "halfHeight": 0.076, "aspect": 1},
+      {"lat": 55.8587, "lng": -4.2561, "halfHeight": 0.0499, "aspect": 2},
+      {"lat": 55.8517, "lng": -4.2426, "halfHeight": 0.0376, "aspect": 3},
+      {"lat": 55.8494, "lng": -4.218, "halfHeight": 0.0298, "aspect": 4.5},
+      {"lat": 55.8566, "lng": -4.218, "halfHeight": 0.0197, "aspect": 7},
+      {"lat": 55.8596, "lng": -4.2135, "halfHeight": 0.0136, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Gloucestershire",
+    "boxes": [
+      {"lat": 51.8139, "lng": -2.1354, "halfHeight": 0.2412, "aspect": 1},
+      {"lat": 51.8055, "lng": -2.0454, "halfHeight": 0.1678, "aspect": 2},
+      {"lat": 51.8803, "lng": -2.0559, "halfHeight": 0.125, "aspect": 3},
+      {"lat": 51.8355, "lng": -2.0768, "halfHeight": 0.0842, "aspect": 4.5},
+      {"lat": 51.8198, "lng": -2.1354, "halfHeight": 0.0614, "aspect": 7},
+      {"lat": 51.8119, "lng": -2.1564, "halfHeight": 0.0457, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Greater London",
+    "boxes": [
+      {"lat": 51.4814, "lng": -0.0353, "halfHeight": 0.1922, "aspect": 1},
+      {"lat": 51.5126, "lng": -0.1147, "halfHeight": 0.1414, "aspect": 2},
+      {"lat": 51.5294, "lng": -0.1293, "halfHeight": 0.1138, "aspect": 3},
+      {"lat": 51.5516, "lng": -0.113, "halfHeight": 0.0791, "aspect": 4.5},
+      {"lat": 51.5568, "lng": -0.1, "halfHeight": 0.053, "aspect": 7},
+      {"lat": 51.5569, "lng": -0.087, "halfHeight": 0.0384, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Greater Manchester",
+    "boxes": [
+      {"lat": 53.4957, "lng": -2.2128, "halfHeight": 0.1991, "aspect": 1},
+      {"lat": 53.5385, "lng": -2.2727, "halfHeight": 0.1274, "aspect": 2},
+      {"lat": 53.535, "lng": -2.2961, "halfHeight": 0.1056, "aspect": 3},
+      {"lat": 53.5385, "lng": -2.3278, "halfHeight": 0.0804, "aspect": 4.5},
+      {"lat": 53.5301, "lng": -2.3111, "halfHeight": 0.0542, "aspect": 7},
+      {"lat": 53.5245, "lng": -2.3111, "halfHeight": 0.0392, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Gwynedd",
+    "boxes": [
+      {"lat": 52.8181, "lng": -3.7927, "halfHeight": 0.1953, "aspect": 1},
+      {"lat": 52.8307, "lng": -3.8457, "halfHeight": 0.1243, "aspect": 2},
+      {"lat": 52.8835, "lng": -3.8025, "halfHeight": 0.0872, "aspect": 3},
+      {"lat": 52.8897, "lng": -3.7685, "halfHeight": 0.0653, "aspect": 4.5},
+      {"lat": 52.871, "lng": -3.7946, "halfHeight": 0.0451, "aspect": 7},
+      {"lat": 52.874, "lng": -3.7999, "halfHeight": 0.0324, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Hampshire",
+    "boxes": [
+      {"lat": 51.1424, "lng": -1.2214, "halfHeight": 0.2985, "aspect": 1},
+      {"lat": 51.132, "lng": -1.237, "halfHeight": 0.1795, "aspect": 2},
+      {"lat": 51.1545, "lng": -1.2322, "halfHeight": 0.1299, "aspect": 3},
+      {"lat": 51.1258, "lng": -1.2227, "halfHeight": 0.0886, "aspect": 4.5},
+      {"lat": 51.1039, "lng": -1.2035, "halfHeight": 0.0593, "aspect": 7},
+      {"lat": 51.1065, "lng": -1.2035, "halfHeight": 0.0418, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Herefordshire",
+    "boxes": [
+      {"lat": 52.0857, "lng": -2.735, "halfHeight": 0.2537, "aspect": 1},
+      {"lat": 52.1188, "lng": -2.738, "halfHeight": 0.1615, "aspect": 2},
+      {"lat": 52.0879, "lng": -2.7426, "halfHeight": 0.111, "aspect": 3},
+      {"lat": 52.0721, "lng": -2.7213, "halfHeight": 0.0802, "aspect": 4.5},
+      {"lat": 52.0903, "lng": -2.7304, "halfHeight": 0.0524, "aspect": 7},
+      {"lat": 52.0829, "lng": -2.7244, "halfHeight": 0.0374, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Hertfordshire",
+    "boxes": [
+      {"lat": 51.868, "lng": -0.1556, "halfHeight": 0.1794, "aspect": 1},
+      {"lat": 51.8547, "lng": -0.104, "halfHeight": 0.1155, "aspect": 2},
+      {"lat": 51.7486, "lng": -0.2673, "halfHeight": 0.0856, "aspect": 3},
+      {"lat": 51.765, "lng": -0.2619, "halfHeight": 0.058, "aspect": 4.5},
+      {"lat": 51.7738, "lng": -0.2873, "halfHeight": 0.0427, "aspect": 7},
+      {"lat": 51.7794, "lng": -0.3163, "halfHeight": 0.0342, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Highland",
+    "boxes": [
+      {"lat": 57.1787, "lng": -4.8151, "halfHeight": 0.5849, "aspect": 1},
+      {"lat": 57.2678, "lng": -4.5724, "halfHeight": 0.4137, "aspect": 2},
+      {"lat": 57.2507, "lng": -4.5412, "halfHeight": 0.2863, "aspect": 3},
+      {"lat": 57.2896, "lng": -4.4493, "halfHeight": 0.2128, "aspect": 4.5},
+      {"lat": 57.3167, "lng": -4.464, "halfHeight": 0.1396, "aspect": 7},
+      {"lat": 57.3066, "lng": -4.4603, "halfHeight": 0.0973, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Inverclyde",
+    "boxes": [
+      {"lat": 55.907, "lng": -4.7956, "halfHeight": 0.0636, "aspect": 1},
+      {"lat": 55.9018, "lng": -4.7651, "halfHeight": 0.0547, "aspect": 2},
+      {"lat": 55.8957, "lng": -4.753, "halfHeight": 0.0437, "aspect": 3},
+      {"lat": 55.8885, "lng": -4.7506, "halfHeight": 0.0309, "aspect": 4.5},
+      {"lat": 55.8876, "lng": -4.7482, "halfHeight": 0.0203, "aspect": 7},
+      {"lat": 55.8892, "lng": -4.7482, "halfHeight": 0.0143, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Isle of Wight",
+    "boxes": [
+      {"lat": 50.6769, "lng": -1.2692, "halfHeight": 0.0999, "aspect": 1},
+      {"lat": 50.6795, "lng": -1.2937, "halfHeight": 0.0644, "aspect": 2},
+      {"lat": 50.6881, "lng": -1.3016, "halfHeight": 0.051, "aspect": 3},
+      {"lat": 50.691, "lng": -1.3036, "halfHeight": 0.0388, "aspect": 4.5},
+      {"lat": 50.6934, "lng": -1.2917, "halfHeight": 0.0285, "aspect": 7},
+      {"lat": 50.6922, "lng": -1.2917, "halfHeight": 0.0216, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Kent",
+    "boxes": [
+      {"lat": 51.1882, "lng": 0.7544, "halfHeight": 0.2573, "aspect": 1},
+      {"lat": 51.2196, "lng": 0.783, "halfHeight": 0.2073, "aspect": 2},
+      {"lat": 51.2352, "lng": 0.7707, "halfHeight": 0.1812, "aspect": 3},
+      {"lat": 51.2323, "lng": 0.7433, "halfHeight": 0.1402, "aspect": 4.5},
+      {"lat": 51.2218, "lng": 0.7295, "halfHeight": 0.0946, "aspect": 7},
+      {"lat": 51.2222, "lng": 0.735, "halfHeight": 0.0667, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Kerry",
+    "boxes": [
+      {"lat": 52.0972, "lng": -9.5131, "halfHeight": 0.2435, "aspect": 1},
+      {"lat": 51.9865, "lng": -9.6147, "halfHeight": 0.1556, "aspect": 2},
+      {"lat": 51.9567, "lng": -9.6891, "halfHeight": 0.1282, "aspect": 3},
+      {"lat": 51.9402, "lng": -9.7582, "halfHeight": 0.1004, "aspect": 4.5},
+      {"lat": 51.9211, "lng": -9.7767, "halfHeight": 0.0677, "aspect": 7},
+      {"lat": 52.1864, "lng": -9.8139, "halfHeight": 0.0547, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Kildare",
+    "boxes": [
+      {"lat": 53.257, "lng": -6.7785, "halfHeight": 0.2095, "aspect": 1},
+      {"lat": 53.3088, "lng": -6.7583, "halfHeight": 0.1147, "aspect": 2},
+      {"lat": 53.2329, "lng": -6.7704, "halfHeight": 0.08, "aspect": 3},
+      {"lat": 53.3576, "lng": -6.7516, "halfHeight": 0.0559, "aspect": 4.5},
+      {"lat": 53.3676, "lng": -6.7624, "halfHeight": 0.0394, "aspect": 7},
+      {"lat": 53.3736, "lng": -6.7731, "halfHeight": 0.0288, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Kilkenny",
+    "boxes": [
+      {"lat": 52.5739, "lng": -7.2144, "halfHeight": 0.2046, "aspect": 1},
+      {"lat": 52.5162, "lng": -7.1757, "halfHeight": 0.1178, "aspect": 2},
+      {"lat": 52.5267, "lng": -7.18, "halfHeight": 0.0797, "aspect": 3},
+      {"lat": 52.5541, "lng": -7.1947, "halfHeight": 0.0563, "aspect": 4.5},
+      {"lat": 52.7598, "lng": -7.3583, "halfHeight": 0.0389, "aspect": 7},
+      {"lat": 52.7655, "lng": -7.3641, "halfHeight": 0.0279, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Lancashire",
+    "boxes": [
+      {"lat": 53.8283, "lng": -2.575, "halfHeight": 0.273, "aspect": 1},
+      {"lat": 53.8201, "lng": -2.529, "halfHeight": 0.1845, "aspect": 2},
+      {"lat": 53.8362, "lng": -2.579, "halfHeight": 0.1483, "aspect": 3},
+      {"lat": 53.8557, "lng": -2.581, "halfHeight": 0.1031, "aspect": 4.5},
+      {"lat": 53.8528, "lng": -2.573, "halfHeight": 0.0674, "aspect": 7},
+      {"lat": 53.8446, "lng": -2.561, "halfHeight": 0.0482, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Laois",
+    "boxes": [
+      {"lat": 53.0112, "lng": -7.3108, "halfHeight": 0.2038, "aspect": 1},
+      {"lat": 52.9731, "lng": -7.3591, "halfHeight": 0.1398, "aspect": 2},
+      {"lat": 52.9464, "lng": -7.3669, "halfHeight": 0.096, "aspect": 3},
+      {"lat": 52.9305, "lng": -7.342, "halfHeight": 0.0693, "aspect": 4.5},
+      {"lat": 52.9201, "lng": -7.3108, "halfHeight": 0.0495, "aspect": 7},
+      {"lat": 52.9133, "lng": -7.3046, "halfHeight": 0.0352, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Larne",
+    "boxes": [
+      {"lat": 54.8983, "lng": -5.9547, "halfHeight": 0.0693, "aspect": 1},
+      {"lat": 54.8826, "lng": -5.9459, "halfHeight": 0.0411, "aspect": 2},
+      {"lat": 54.7975, "lng": -5.8928, "halfHeight": 0.0342, "aspect": 3},
+      {"lat": 54.7932, "lng": -5.8799, "halfHeight": 0.026, "aspect": 4.5},
+      {"lat": 54.7916, "lng": -5.8703, "halfHeight": 0.0182, "aspect": 7},
+      {"lat": 54.7909, "lng": -5.8703, "halfHeight": 0.0131, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Leicestershire",
+    "boxes": [
+      {"lat": 52.6328, "lng": -1.1088, "halfHeight": 0.2288, "aspect": 1},
+      {"lat": 52.6494, "lng": -1.137, "halfHeight": 0.1653, "aspect": 2},
+      {"lat": 52.6665, "lng": -1.168, "halfHeight": 0.121, "aspect": 3},
+      {"lat": 52.6316, "lng": -1.168, "halfHeight": 0.0811, "aspect": 4.5},
+      {"lat": 52.6236, "lng": -1.168, "halfHeight": 0.0521, "aspect": 7},
+      {"lat": 52.7494, "lng": -1.0733, "halfHeight": 0.0371, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Leitrim",
+    "boxes": [
+      {"lat": 53.9908, "lng": -7.8413, "halfHeight": 0.1463, "aspect": 1},
+      {"lat": 54.0004, "lng": -7.865, "halfHeight": 0.0996, "aspect": 2},
+      {"lat": 53.9851, "lng": -7.8421, "halfHeight": 0.0743, "aspect": 3},
+      {"lat": 53.987, "lng": -7.8274, "halfHeight": 0.0528, "aspect": 4.5},
+      {"lat": 53.9863, "lng": -7.8241, "halfHeight": 0.0344, "aspect": 7},
+      {"lat": 53.9562, "lng": -7.8437, "halfHeight": 0.0248, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Limavady",
+    "boxes": [
+      {"lat": 54.9803, "lng": -6.9327, "halfHeight": 0.1203, "aspect": 1},
+      {"lat": 54.9694, "lng": -6.9478, "halfHeight": 0.0689, "aspect": 2},
+      {"lat": 55.0128, "lng": -6.9573, "halfHeight": 0.0479, "aspect": 3},
+      {"lat": 55.0171, "lng": -6.9747, "halfHeight": 0.0362, "aspect": 4.5},
+      {"lat": 55.0179, "lng": -6.9778, "halfHeight": 0.0238, "aspect": 7},
+      {"lat": 55.031, "lng": -6.9842, "halfHeight": 0.0172, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Limerick",
+    "boxes": [
+      {"lat": 52.5154, "lng": -8.7372, "halfHeight": 0.2235, "aspect": 1},
+      {"lat": 52.494, "lng": -8.7715, "halfHeight": 0.1884, "aspect": 2},
+      {"lat": 52.4748, "lng": -8.8457, "halfHeight": 0.1509, "aspect": 3},
+      {"lat": 52.4408, "lng": -8.8457, "halfHeight": 0.1006, "aspect": 4.5},
+      {"lat": 52.5559, "lng": -8.7161, "halfHeight": 0.0689, "aspect": 7},
+      {"lat": 52.5455, "lng": -8.7774, "halfHeight": 0.0521, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Lincolnshire",
+    "boxes": [
+      {"lat": 53.2394, "lng": -0.2416, "halfHeight": 0.3946, "aspect": 1},
+      {"lat": 53.2052, "lng": -0.1826, "halfHeight": 0.2272, "aspect": 2},
+      {"lat": 53.18, "lng": -0.161, "halfHeight": 0.1579, "aspect": 3},
+      {"lat": 53.31, "lng": -0.2448, "halfHeight": 0.1111, "aspect": 4.5},
+      {"lat": 53.1498, "lng": -0.1813, "halfHeight": 0.0746, "aspect": 7},
+      {"lat": 53.1622, "lng": -0.1762, "halfHeight": 0.0527, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Lisburn",
+    "boxes": [
+      {"lat": 54.5051, "lng": -6.1047, "halfHeight": 0.1051, "aspect": 1},
+      {"lat": 54.4977, "lng": -6.072, "halfHeight": 0.0735, "aspect": 2},
+      {"lat": 54.489, "lng": -6.0653, "halfHeight": 0.0536, "aspect": 3},
+      {"lat": 54.4866, "lng": -6.0686, "halfHeight": 0.0376, "aspect": 4.5},
+      {"lat": 54.4804, "lng": -6.0619, "halfHeight": 0.0252, "aspect": 7},
+      {"lat": 54.4781, "lng": -6.0619, "halfHeight": 0.018, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Longford",
+    "boxes": [
+      {"lat": 53.6469, "lng": -7.799, "halfHeight": 0.1495, "aspect": 1},
+      {"lat": 53.7596, "lng": -7.669, "halfHeight": 0.0929, "aspect": 2},
+      {"lat": 53.7655, "lng": -7.669, "halfHeight": 0.0716, "aspect": 3},
+      {"lat": 53.7636, "lng": -7.651, "halfHeight": 0.0517, "aspect": 4.5},
+      {"lat": 53.7532, "lng": -7.6356, "halfHeight": 0.0358, "aspect": 7},
+      {"lat": 53.7491, "lng": -7.6407, "halfHeight": 0.0258, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Louth",
+    "boxes": [
+      {"lat": 53.9067, "lng": -6.4811, "halfHeight": 0.1021, "aspect": 1},
+      {"lat": 53.8256, "lng": -6.391, "halfHeight": 0.068, "aspect": 2},
+      {"lat": 53.8354, "lng": -6.4068, "halfHeight": 0.0506, "aspect": 3},
+      {"lat": 53.8444, "lng": -6.4135, "halfHeight": 0.0348, "aspect": 4.5},
+      {"lat": 54.0343, "lng": -6.3685, "halfHeight": 0.0267, "aspect": 7},
+      {"lat": 54.0281, "lng": -6.3594, "halfHeight": 0.019, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Magherafelt",
+    "boxes": [
+      {"lat": 54.8162, "lng": -6.6343, "halfHeight": 0.1375, "aspect": 1},
+      {"lat": 54.794, "lng": -6.6946, "halfHeight": 0.0917, "aspect": 2},
+      {"lat": 54.7833, "lng": -6.6887, "halfHeight": 0.0689, "aspect": 3},
+      {"lat": 54.7812, "lng": -6.6887, "halfHeight": 0.0459, "aspect": 4.5},
+      {"lat": 54.7627, "lng": -6.6887, "halfHeight": 0.0298, "aspect": 7},
+      {"lat": 54.7553, "lng": -6.7044, "halfHeight": 0.0224, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Mayo",
+    "boxes": [
+      {"lat": 53.8325, "lng": -9.2495, "halfHeight": 0.309, "aspect": 1},
+      {"lat": 53.8334, "lng": -9.1435, "halfHeight": 0.2077, "aspect": 2},
+      {"lat": 53.81, "lng": -9.1435, "halfHeight": 0.1385, "aspect": 3},
+      {"lat": 53.7129, "lng": -9.362, "halfHeight": 0.1057, "aspect": 4.5},
+      {"lat": 53.7208, "lng": -9.3522, "halfHeight": 0.0776, "aspect": 7},
+      {"lat": 53.7323, "lng": -9.3259, "halfHeight": 0.0573, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Meath",
+    "boxes": [
+      {"lat": 53.6095, "lng": -6.7041, "halfHeight": 0.2431, "aspect": 1},
+      {"lat": 53.5334, "lng": -6.6923, "halfHeight": 0.1377, "aspect": 2},
+      {"lat": 53.6519, "lng": -6.6166, "halfHeight": 0.1067, "aspect": 3},
+      {"lat": 53.6677, "lng": -6.5988, "halfHeight": 0.0773, "aspect": 4.5},
+      {"lat": 53.7362, "lng": -6.8348, "halfHeight": 0.0534, "aspect": 7},
+      {"lat": 53.7444, "lng": -6.8393, "halfHeight": 0.0378, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Merseyside",
+    "boxes": [
+      {"lat": 53.432, "lng": -2.8607, "halfHeight": 0.0988, "aspect": 1},
+      {"lat": 53.4313, "lng": -2.835, "halfHeight": 0.0709, "aspect": 2},
+      {"lat": 53.4398, "lng": -2.8319, "halfHeight": 0.0533, "aspect": 3},
+      {"lat": 53.4493, "lng": -2.8382, "halfHeight": 0.0372, "aspect": 4.5},
+      {"lat": 53.4563, "lng": -2.8382, "halfHeight": 0.0255, "aspect": 7},
+      {"lat": 53.4535, "lng": -2.8089, "halfHeight": 0.0207, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Merthyr Tydfil",
+    "boxes": [
+      {"lat": 51.7587, "lng": -3.3724, "halfHeight": 0.0406, "aspect": 1},
+      {"lat": 51.7501, "lng": -3.3705, "halfHeight": 0.023, "aspect": 2},
+      {"lat": 51.751, "lng": -3.3718, "halfHeight": 0.0164, "aspect": 3},
+      {"lat": 51.7485, "lng": -3.3718, "halfHeight": 0.0114, "aspect": 4.5},
+      {"lat": 51.7538, "lng": -3.3769, "halfHeight": 0.0075, "aspect": 7},
+      {"lat": 51.7533, "lng": -3.3769, "halfHeight": 0.0056, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Mid Ulster",
+    "boxes": [
+      {"lat": 54.6416, "lng": -6.8362, "halfHeight": 0.1135, "aspect": 1},
+      {"lat": 54.6357, "lng": -6.7056, "halfHeight": 0.1034, "aspect": 2},
+      {"lat": 54.6249, "lng": -6.6976, "halfHeight": 0.0839, "aspect": 3},
+      {"lat": 54.6321, "lng": -6.6908, "halfHeight": 0.057, "aspect": 4.5},
+      {"lat": 54.6382, "lng": -6.6908, "halfHeight": 0.0374, "aspect": 7},
+      {"lat": 54.6488, "lng": -6.6999, "halfHeight": 0.0266, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Midlothian",
+    "boxes": [
+      {"lat": 55.8365, "lng": -3.086, "halfHeight": 0.0861, "aspect": 1},
+      {"lat": 55.841, "lng": -3.0842, "halfHeight": 0.0613, "aspect": 2},
+      {"lat": 55.8427, "lng": -3.0758, "halfHeight": 0.048, "aspect": 3},
+      {"lat": 55.8366, "lng": -3.0737, "halfHeight": 0.0376, "aspect": 4.5},
+      {"lat": 55.8314, "lng": -3.0779, "halfHeight": 0.0279, "aspect": 7},
+      {"lat": 55.8278, "lng": -3.0737, "halfHeight": 0.0214, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Monaghan",
+    "boxes": [
+      {"lat": 54.1834, "lng": -7.0004, "halfHeight": 0.1452, "aspect": 1},
+      {"lat": 54.1557, "lng": -6.9981, "halfHeight": 0.0978, "aspect": 2},
+      {"lat": 54.146, "lng": -7.0057, "halfHeight": 0.0799, "aspect": 3},
+      {"lat": 54.143, "lng": -6.9568, "halfHeight": 0.0643, "aspect": 4.5},
+      {"lat": 54.1515, "lng": -6.9476, "halfHeight": 0.0423, "aspect": 7},
+      {"lat": 54.1454, "lng": -6.9537, "halfHeight": 0.0304, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Monmouthshire",
+    "boxes": [
+      {"lat": 51.7388, "lng": -2.8279, "halfHeight": 0.1439, "aspect": 1},
+      {"lat": 51.7781, "lng": -2.8528, "halfHeight": 0.0833, "aspect": 2},
+      {"lat": 51.7911, "lng": -2.8568, "halfHeight": 0.0586, "aspect": 3},
+      {"lat": 51.8016, "lng": -2.8627, "halfHeight": 0.0402, "aspect": 4.5},
+      {"lat": 51.8141, "lng": -2.8866, "halfHeight": 0.0284, "aspect": 7},
+      {"lat": 51.8085, "lng": -2.8945, "halfHeight": 0.0224, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Moray",
+    "boxes": [
+      {"lat": 57.5509, "lng": -3.2325, "halfHeight": 0.2195, "aspect": 1},
+      {"lat": 57.5465, "lng": -3.3411, "halfHeight": 0.1659, "aspect": 2},
+      {"lat": 57.5912, "lng": -3.208, "halfHeight": 0.1277, "aspect": 3},
+      {"lat": 57.5823, "lng": -3.2674, "halfHeight": 0.0975, "aspect": 4.5},
+      {"lat": 57.5668, "lng": -3.251, "halfHeight": 0.0652, "aspect": 7},
+      {"lat": 57.5551, "lng": -3.2387, "halfHeight": 0.0467, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Moyle",
+    "boxes": [
+      {"lat": 55.1332, "lng": -6.1405, "halfHeight": 0.0855, "aspect": 1},
+      {"lat": 55.1603, "lng": -6.2183, "halfHeight": 0.069, "aspect": 2},
+      {"lat": 55.1751, "lng": -6.29, "halfHeight": 0.0576, "aspect": 3},
+      {"lat": 55.1774, "lng": -6.3032, "halfHeight": 0.0473, "aspect": 4.5},
+      {"lat": 55.1676, "lng": -6.2856, "halfHeight": 0.0324, "aspect": 7},
+      {"lat": 55.1651, "lng": -6.2812, "halfHeight": 0.0234, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Na h-Eileanan Siar",
+    "boxes": [
+      {"lat": 58.2177, "lng": -6.5544, "halfHeight": 0.1544, "aspect": 1},
+      {"lat": 58.266, "lng": -6.5574, "halfHeight": 0.0957, "aspect": 2},
+      {"lat": 58.2771, "lng": -6.5418, "halfHeight": 0.0715, "aspect": 3},
+      {"lat": 58.2717, "lng": -6.5562, "halfHeight": 0.0519, "aspect": 4.5},
+      {"lat": 58.3136, "lng": -6.4887, "halfHeight": 0.034, "aspect": 7},
+      {"lat": 58.2897, "lng": -6.5369, "halfHeight": 0.0245, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Neath Port Talbot",
+    "boxes": [
+      {"lat": 51.6989, "lng": -3.7085, "halfHeight": 0.095, "aspect": 1},
+      {"lat": 51.6839, "lng": -3.7017, "halfHeight": 0.0641, "aspect": 2},
+      {"lat": 51.7293, "lng": -3.7214, "halfHeight": 0.0428, "aspect": 3},
+      {"lat": 51.7377, "lng": -3.7304, "halfHeight": 0.0308, "aspect": 4.5},
+      {"lat": 51.7443, "lng": -3.7455, "halfHeight": 0.0206, "aspect": 7},
+      {"lat": 51.7477, "lng": -3.7455, "halfHeight": 0.0153, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Newport",
+    "boxes": [
+      {"lat": 51.5912, "lng": -2.9096, "halfHeight": 0.0565, "aspect": 1},
+      {"lat": 51.588, "lng": -2.9325, "halfHeight": 0.0397, "aspect": 2},
+      {"lat": 51.5825, "lng": -2.9475, "halfHeight": 0.0315, "aspect": 3},
+      {"lat": 51.5782, "lng": -2.965, "halfHeight": 0.0246, "aspect": 4.5},
+      {"lat": 51.5801, "lng": -2.97, "halfHeight": 0.0167, "aspect": 7},
+      {"lat": 51.5816, "lng": -2.98, "halfHeight": 0.012, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Newry and Mourne",
+    "boxes": [
+      {"lat": 54.1828, "lng": -6.3542, "halfHeight": 0.1225, "aspect": 1},
+      {"lat": 54.1724, "lng": -6.2895, "halfHeight": 0.1051, "aspect": 2},
+      {"lat": 54.1636, "lng": -6.3367, "halfHeight": 0.0904, "aspect": 3},
+      {"lat": 54.1504, "lng": -6.3414, "halfHeight": 0.0652, "aspect": 4.5},
+      {"lat": 54.14, "lng": -6.2438, "halfHeight": 0.0501, "aspect": 7},
+      {"lat": 54.1465, "lng": -6.2564, "halfHeight": 0.0375, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Newtownabbey",
+    "boxes": [
+      {"lat": 54.7269, "lng": -5.973, "halfHeight": 0.067, "aspect": 1},
+      {"lat": 54.7404, "lng": -5.9762, "halfHeight": 0.0356, "aspect": 2},
+      {"lat": 54.6838, "lng": -5.9713, "halfHeight": 0.0256, "aspect": 3},
+      {"lat": 54.6877, "lng": -5.9681, "halfHeight": 0.0179, "aspect": 4.5},
+      {"lat": 54.6869, "lng": -5.9681, "halfHeight": 0.0119, "aspect": 7},
+      {"lat": 54.6906, "lng": -5.9681, "halfHeight": 0.0083, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Norfolk",
+    "boxes": [
+      {"lat": 52.6886, "lng": 0.8788, "halfHeight": 0.3969, "aspect": 1},
+      {"lat": 52.6375, "lng": 0.9856, "halfHeight": 0.2894, "aspect": 2},
+      {"lat": 52.6352, "lng": 0.9934, "halfHeight": 0.2195, "aspect": 3},
+      {"lat": 52.6396, "lng": 0.9685, "halfHeight": 0.1606, "aspect": 4.5},
+      {"lat": 52.608, "lng": 0.9841, "halfHeight": 0.1054, "aspect": 7},
+      {"lat": 52.6713, "lng": 0.953, "halfHeight": 0.075, "aspect": 10}
+    ]
+  },
+  {
+    "name": "North Ayrshire",
+    "boxes": [
+      {"lat": 55.7252, "lng": -4.7588, "halfHeight": 0.0965, "aspect": 1},
+      {"lat": 55.727, "lng": -4.7285, "halfHeight": 0.0659, "aspect": 2},
+      {"lat": 55.7352, "lng": -4.7154, "halfHeight": 0.0485, "aspect": 3},
+      {"lat": 55.7406, "lng": -4.7072, "halfHeight": 0.0342, "aspect": 4.5},
+      {"lat": 55.7501, "lng": -4.6974, "halfHeight": 0.0227, "aspect": 7},
+      {"lat": 55.7526, "lng": -4.6974, "halfHeight": 0.0164, "aspect": 10}
+    ]
+  },
+  {
+    "name": "North Down",
+    "boxes": [
+      {"lat": 54.6461, "lng": -5.675, "halfHeight": 0.0387, "aspect": 1},
+      {"lat": 54.6487, "lng": -5.7097, "halfHeight": 0.0342, "aspect": 2},
+      {"lat": 54.6471, "lng": -5.7056, "halfHeight": 0.0295, "aspect": 3},
+      {"lat": 54.6423, "lng": -5.7199, "halfHeight": 0.0223, "aspect": 4.5},
+      {"lat": 54.6405, "lng": -5.727, "halfHeight": 0.016, "aspect": 7},
+      {"lat": 54.6415, "lng": -5.727, "halfHeight": 0.0114, "aspect": 10}
+    ]
+  },
+  {
+    "name": "North Lanarkshire",
+    "boxes": [
+      {"lat": 55.8512, "lng": -3.9226, "halfHeight": 0.1012, "aspect": 1},
+      {"lat": 55.8328, "lng": -3.8844, "halfHeight": 0.0693, "aspect": 2},
+      {"lat": 55.8424, "lng": -3.9044, "halfHeight": 0.053, "aspect": 3},
+      {"lat": 55.8357, "lng": -3.9062, "halfHeight": 0.0361, "aspect": 4.5},
+      {"lat": 55.8292, "lng": -3.9026, "halfHeight": 0.0238, "aspect": 7},
+      {"lat": 55.8347, "lng": -3.9099, "halfHeight": 0.0171, "aspect": 10}
+    ]
+  },
+  {
+    "name": "North Yorkshire",
+    "boxes": [
+      {"lat": 54.1941, "lng": -1.3559, "halfHeight": 0.4244, "aspect": 1},
+      {"lat": 54.2292, "lng": -1.5293, "halfHeight": 0.3643, "aspect": 2},
+      {"lat": 54.2603, "lng": -1.4031, "halfHeight": 0.2929, "aspect": 3},
+      {"lat": 54.2472, "lng": -1.3709, "halfHeight": 0.206, "aspect": 4.5},
+      {"lat": 54.2299, "lng": -1.3571, "halfHeight": 0.1342, "aspect": 7},
+      {"lat": 54.1633, "lng": -1.449, "halfHeight": 0.0996, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Northamptonshire",
+    "boxes": [
+      {"lat": 52.2827, "lng": -0.9247, "halfHeight": 0.196, "aspect": 1},
+      {"lat": 52.2944, "lng": -0.9055, "halfHeight": 0.1298, "aspect": 2},
+      {"lat": 52.3293, "lng": -0.8343, "halfHeight": 0.1031, "aspect": 3},
+      {"lat": 52.3514, "lng": -0.8131, "halfHeight": 0.0727, "aspect": 4.5},
+      {"lat": 52.3022, "lng": -0.8631, "halfHeight": 0.0483, "aspect": 7},
+      {"lat": 52.3123, "lng": -0.8593, "halfHeight": 0.0343, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Northumberland",
+    "boxes": [
+      {"lat": 55.1575, "lng": -2.1431, "halfHeight": 0.3387, "aspect": 1},
+      {"lat": 55.2137, "lng": -2.0333, "halfHeight": 0.2298, "aspect": 2},
+      {"lat": 55.1972, "lng": -2.0753, "halfHeight": 0.1684, "aspect": 3},
+      {"lat": 55.1987, "lng": -2.0897, "halfHeight": 0.1174, "aspect": 4.5},
+      {"lat": 55.1763, "lng": -2.0849, "halfHeight": 0.0789, "aspect": 7},
+      {"lat": 55.1776, "lng": -2.0897, "halfHeight": 0.0565, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Nottinghamshire",
+    "boxes": [
+      {"lat": 53.0248, "lng": -1.0573, "halfHeight": 0.211, "aspect": 1},
+      {"lat": 53.07, "lng": -1.0376, "halfHeight": 0.1267, "aspect": 2},
+      {"lat": 53.0933, "lng": -1.0133, "halfHeight": 0.0927, "aspect": 3},
+      {"lat": 53.0877, "lng": -1.0052, "halfHeight": 0.0637, "aspect": 4.5},
+      {"lat": 53.1197, "lng": -1.0052, "halfHeight": 0.0416, "aspect": 7},
+      {"lat": 53.1292, "lng": -1.0052, "halfHeight": 0.0293, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Offaly",
+    "boxes": [
+      {"lat": 53.2461, "lng": -7.804, "halfHeight": 0.1642, "aspect": 1},
+      {"lat": 53.2565, "lng": -7.7349, "halfHeight": 0.1163, "aspect": 2},
+      {"lat": 53.2663, "lng": -7.6744, "halfHeight": 0.0976, "aspect": 3},
+      {"lat": 53.2668, "lng": -7.5108, "halfHeight": 0.0972, "aspect": 4.5},
+      {"lat": 53.2836, "lng": -7.5107, "halfHeight": 0.0685, "aspect": 7},
+      {"lat": 53.2905, "lng": -7.515, "halfHeight": 0.05, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Omagh",
+    "boxes": [
+      {"lat": 54.5995, "lng": -7.2077, "halfHeight": 0.1674, "aspect": 1},
+      {"lat": 54.5715, "lng": -7.2891, "halfHeight": 0.1206, "aspect": 2},
+      {"lat": 54.5881, "lng": -7.2549, "halfHeight": 0.0919, "aspect": 3},
+      {"lat": 54.6002, "lng": -7.2579, "halfHeight": 0.0638, "aspect": 4.5},
+      {"lat": 54.5979, "lng": -7.2877, "halfHeight": 0.0461, "aspect": 7},
+      {"lat": 54.601, "lng": -7.3055, "halfHeight": 0.0346, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Orkney",
+    "boxes": [
+      {"lat": 59.085, "lng": -3.2241, "halfHeight": 0.0894, "aspect": 1},
+      {"lat": 59.0735, "lng": -3.2063, "halfHeight": 0.0673, "aspect": 2},
+      {"lat": 59.0734, "lng": -3.2032, "halfHeight": 0.0466, "aspect": 3},
+      {"lat": 59.07, "lng": -3.1931, "halfHeight": 0.0335, "aspect": 4.5},
+      {"lat": 58.9739, "lng": -3.0589, "halfHeight": 0.0239, "aspect": 7},
+      {"lat": 58.9699, "lng": -3.0589, "halfHeight": 0.0172, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Oxfordshire",
+    "boxes": [
+      {"lat": 51.7286, "lng": -1.3857, "halfHeight": 0.2577, "aspect": 1},
+      {"lat": 51.6486, "lng": -1.3008, "halfHeight": 0.1531, "aspect": 2},
+      {"lat": 51.6449, "lng": -1.2943, "halfHeight": 0.1166, "aspect": 3},
+      {"lat": 51.6213, "lng": -1.2975, "halfHeight": 0.0786, "aspect": 4.5},
+      {"lat": 51.7046, "lng": -1.2779, "halfHeight": 0.0523, "aspect": 7},
+      {"lat": 51.6958, "lng": -1.2649, "halfHeight": 0.0377, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Pembrokeshire",
+    "boxes": [
+      {"lat": 51.8967, "lng": -4.9269, "halfHeight": 0.1589, "aspect": 1},
+      {"lat": 51.9016, "lng": -4.9285, "halfHeight": 0.0937, "aspect": 2},
+      {"lat": 51.9609, "lng": -4.844, "halfHeight": 0.0757, "aspect": 3},
+      {"lat": 51.9719, "lng": -4.8106, "halfHeight": 0.0576, "aspect": 4.5},
+      {"lat": 51.9695, "lng": -4.8074, "halfHeight": 0.0398, "aspect": 7},
+      {"lat": 51.9692, "lng": -4.801, "halfHeight": 0.0285, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Perth and Kinross",
+    "boxes": [
+      {"lat": 56.5009, "lng": -3.7091, "halfHeight": 0.3859, "aspect": 1},
+      {"lat": 56.6807, "lng": -3.876, "halfHeight": 0.2528, "aspect": 2},
+      {"lat": 56.6512, "lng": -3.9568, "halfHeight": 0.2004, "aspect": 3},
+      {"lat": 56.6182, "lng": -3.9277, "halfHeight": 0.1397, "aspect": 4.5},
+      {"lat": 56.5963, "lng": -3.8631, "halfHeight": 0.0993, "aspect": 7},
+      {"lat": 56.6008, "lng": -3.8567, "halfHeight": 0.0701, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Powys",
+    "boxes": [
+      {"lat": 52.2128, "lng": -3.3888, "halfHeight": 0.2632, "aspect": 1},
+      {"lat": 52.5806, "lng": -3.4258, "halfHeight": 0.1496, "aspect": 2},
+      {"lat": 52.574, "lng": -3.4771, "halfHeight": 0.117, "aspect": 3},
+      {"lat": 52.5765, "lng": -3.4752, "halfHeight": 0.0778, "aspect": 4.5},
+      {"lat": 52.6306, "lng": -3.4486, "halfHeight": 0.0518, "aspect": 7},
+      {"lat": 52.629, "lng": -3.4486, "halfHeight": 0.0374, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Renfrewshire",
+    "boxes": [
+      {"lat": 55.8447, "lng": -4.4988, "halfHeight": 0.0841, "aspect": 1},
+      {"lat": 55.8127, "lng": -4.5633, "halfHeight": 0.0528, "aspect": 2},
+      {"lat": 55.8179, "lng": -4.5555, "halfHeight": 0.0435, "aspect": 3},
+      {"lat": 55.8231, "lng": -4.5509, "halfHeight": 0.0338, "aspect": 4.5},
+      {"lat": 55.8282, "lng": -4.5478, "halfHeight": 0.0244, "aspect": 7},
+      {"lat": 55.832, "lng": -4.5416, "halfHeight": 0.0185, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Rhondda, Cynon, Taff",
+    "boxes": [
+      {"lat": 51.5709, "lng": -3.3746, "halfHeight": 0.0874, "aspect": 1},
+      {"lat": 51.5567, "lng": -3.3624, "halfHeight": 0.0499, "aspect": 2},
+      {"lat": 51.5539, "lng": -3.3582, "halfHeight": 0.0348, "aspect": 3},
+      {"lat": 51.5508, "lng": -3.3553, "halfHeight": 0.0244, "aspect": 4.5},
+      {"lat": 51.5497, "lng": -3.3525, "halfHeight": 0.0161, "aspect": 7},
+      {"lat": 51.6441, "lng": -3.4209, "halfHeight": 0.0115, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Roscommon",
+    "boxes": [
+      {"lat": 53.7918, "lng": -8.2099, "halfHeight": 0.2058, "aspect": 1},
+      {"lat": 53.8139, "lng": -8.311, "halfHeight": 0.1602, "aspect": 2},
+      {"lat": 53.7877, "lng": -8.3292, "halfHeight": 0.1183, "aspect": 3},
+      {"lat": 53.7906, "lng": -8.311, "halfHeight": 0.0825, "aspect": 4.5},
+      {"lat": 53.7879, "lng": -8.3073, "halfHeight": 0.0538, "aspect": 7},
+      {"lat": 53.7818, "lng": -8.3, "halfHeight": 0.0382, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Rutland",
+    "boxes": [
+      {"lat": 52.6493, "lng": -0.6793, "halfHeight": 0.1095, "aspect": 1},
+      {"lat": 52.6687, "lng": -0.6572, "halfHeight": 0.0701, "aspect": 2},
+      {"lat": 52.6593, "lng": -0.6572, "halfHeight": 0.0476, "aspect": 3},
+      {"lat": 52.6774, "lng": -0.6374, "halfHeight": 0.0361, "aspect": 4.5},
+      {"lat": 52.679, "lng": -0.6222, "halfHeight": 0.0248, "aspect": 7},
+      {"lat": 52.68, "lng": -0.6161, "halfHeight": 0.0181, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Scottish Borders",
+    "boxes": [
+      {"lat": 55.5647, "lng": -2.7029, "halfHeight": 0.3495, "aspect": 1},
+      {"lat": 55.5732, "lng": -2.8174, "halfHeight": 0.2442, "aspect": 2},
+      {"lat": 55.5479, "lng": -2.9001, "halfHeight": 0.1896, "aspect": 3},
+      {"lat": 55.515, "lng": -2.8824, "halfHeight": 0.1337, "aspect": 4.5},
+      {"lat": 55.4886, "lng": -2.8676, "halfHeight": 0.0882, "aspect": 7},
+      {"lat": 55.4751, "lng": -2.8499, "halfHeight": 0.0631, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Shetland Islands",
+    "boxes": [
+      {"lat": 60.3096, "lng": -1.2413, "halfHeight": 0.073, "aspect": 1},
+      {"lat": 60.2682, "lng": -1.566, "halfHeight": 0.0494, "aspect": 2},
+      {"lat": 60.3159, "lng": -1.2268, "halfHeight": 0.0356, "aspect": 3},
+      {"lat": 60.264, "lng": -1.5422, "halfHeight": 0.0291, "aspect": 4.5},
+      {"lat": 60.2688, "lng": -1.4971, "halfHeight": 0.0197, "aspect": 7},
+      {"lat": 60.269, "lng": -1.4441, "halfHeight": 0.0198, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Shropshire",
+    "boxes": [
+      {"lat": 52.5812, "lng": -2.6554, "halfHeight": 0.3046, "aspect": 1},
+      {"lat": 52.5554, "lng": -2.6438, "halfHeight": 0.1656, "aspect": 2},
+      {"lat": 52.6394, "lng": -2.6612, "halfHeight": 0.1165, "aspect": 3},
+      {"lat": 52.4426, "lng": -2.7326, "halfHeight": 0.0837, "aspect": 4.5},
+      {"lat": 52.4372, "lng": -2.7596, "halfHeight": 0.0585, "aspect": 7},
+      {"lat": 52.4384, "lng": -2.775, "halfHeight": 0.0423, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Sligo",
+    "boxes": [
+      {"lat": 54.1275, "lng": -8.7598, "halfHeight": 0.1607, "aspect": 1},
+      {"lat": 54.117, "lng": -8.6345, "halfHeight": 0.1422, "aspect": 2},
+      {"lat": 54.0957, "lng": -8.6078, "halfHeight": 0.1047, "aspect": 3},
+      {"lat": 54.1037, "lng": -8.5734, "halfHeight": 0.0773, "aspect": 4.5},
+      {"lat": 54.1098, "lng": -8.562, "halfHeight": 0.0513, "aspect": 7},
+      {"lat": 54.1781, "lng": -8.753, "halfHeight": 0.0371, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Somerset",
+    "boxes": [
+      {"lat": 51.1944, "lng": -2.6643, "halfHeight": 0.2952, "aspect": 1},
+      {"lat": 51.0786, "lng": -2.9507, "halfHeight": 0.1755, "aspect": 2},
+      {"lat": 51.0961, "lng": -2.8264, "halfHeight": 0.149, "aspect": 3},
+      {"lat": 51.1083, "lng": -2.9041, "halfHeight": 0.1227, "aspect": 4.5},
+      {"lat": 51.1274, "lng": -3.0004, "halfHeight": 0.0926, "aspect": 7},
+      {"lat": 51.1316, "lng": -3.0377, "halfHeight": 0.0686, "aspect": 10}
+    ]
+  },
+  {
+    "name": "South Ayrshire",
+    "boxes": [
+      {"lat": 55.2476, "lng": -4.6758, "halfHeight": 0.1516, "aspect": 1},
+      {"lat": 55.2389, "lng": -4.646, "halfHeight": 0.0955, "aspect": 2},
+      {"lat": 55.2075, "lng": -4.6631, "halfHeight": 0.0664, "aspect": 3},
+      {"lat": 55.1879, "lng": -4.6777, "halfHeight": 0.0466, "aspect": 4.5},
+      {"lat": 55.1796, "lng": -4.6898, "halfHeight": 0.0313, "aspect": 7},
+      {"lat": 55.1803, "lng": -4.6898, "halfHeight": 0.0225, "aspect": 10}
+    ]
+  },
+  {
+    "name": "South Lanarkshire",
+    "boxes": [
+      {"lat": 55.602, "lng": -3.7442, "halfHeight": 0.2168, "aspect": 1},
+      {"lat": 55.6534, "lng": -3.8446, "halfHeight": 0.1407, "aspect": 2},
+      {"lat": 55.6711, "lng": -3.8395, "halfHeight": 0.1095, "aspect": 3},
+      {"lat": 55.6867, "lng": -3.8496, "halfHeight": 0.0817, "aspect": 4.5},
+      {"lat": 55.701, "lng": -3.8327, "halfHeight": 0.0549, "aspect": 7},
+      {"lat": 55.7091, "lng": -3.826, "halfHeight": 0.039, "aspect": 10}
+    ]
+  },
+  {
+    "name": "South Yorkshire",
+    "boxes": [
+      {"lat": 53.4509, "lng": -1.3695, "halfHeight": 0.2103, "aspect": 1},
+      {"lat": 53.4675, "lng": -1.3899, "halfHeight": 0.1394, "aspect": 2},
+      {"lat": 53.4818, "lng": -1.3824, "halfHeight": 0.1146, "aspect": 3},
+      {"lat": 53.4963, "lng": -1.358, "halfHeight": 0.0846, "aspect": 4.5},
+      {"lat": 53.5, "lng": -1.373, "halfHeight": 0.0581, "aspect": 7},
+      {"lat": 53.5047, "lng": -1.3655, "halfHeight": 0.0423, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Staffordshire",
+    "boxes": [
+      {"lat": 52.9067, "lng": -2.0889, "halfHeight": 0.2475, "aspect": 1},
+      {"lat": 52.7712, "lng": -2.0235, "halfHeight": 0.1403, "aspect": 2},
+      {"lat": 52.78, "lng": -2.0014, "halfHeight": 0.1005, "aspect": 3},
+      {"lat": 52.7987, "lng": -2.0048, "halfHeight": 0.073, "aspect": 4.5},
+      {"lat": 52.8088, "lng": -1.9946, "halfHeight": 0.0522, "aspect": 7},
+      {"lat": 52.8129, "lng": -1.9878, "halfHeight": 0.0369, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Stirling",
+    "boxes": [
+      {"lat": 56.1489, "lng": -4.212, "halfHeight": 0.216, "aspect": 1},
+      {"lat": 56.1664, "lng": -4.2837, "halfHeight": 0.1575, "aspect": 2},
+      {"lat": 56.1461, "lng": -4.228, "halfHeight": 0.122, "aspect": 3},
+      {"lat": 56.1657, "lng": -4.2451, "halfHeight": 0.0853, "aspect": 4.5},
+      {"lat": 56.1819, "lng": -4.2494, "halfHeight": 0.0573, "aspect": 7},
+      {"lat": 56.1891, "lng": -4.2537, "halfHeight": 0.0408, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Strabane",
+    "boxes": [
+      {"lat": 54.817, "lng": -7.3299, "halfHeight": 0.115, "aspect": 1},
+      {"lat": 54.799, "lng": -7.311, "halfHeight": 0.0797, "aspect": 2},
+      {"lat": 54.7892, "lng": -7.31, "halfHeight": 0.0628, "aspect": 3},
+      {"lat": 54.7823, "lng": -7.308, "halfHeight": 0.0471, "aspect": 4.5},
+      {"lat": 54.6845, "lng": -7.6634, "halfHeight": 0.0343, "aspect": 7},
+      {"lat": 54.7893, "lng": -7.2676, "halfHeight": 0.026, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Suffolk",
+    "boxes": [
+      {"lat": 52.1914, "lng": 1.0469, "halfHeight": 0.2649, "aspect": 1},
+      {"lat": 52.2158, "lng": 1.1077, "halfHeight": 0.2253, "aspect": 2},
+      {"lat": 52.242, "lng": 1.0605, "halfHeight": 0.1812, "aspect": 3},
+      {"lat": 52.2755, "lng": 1.0716, "halfHeight": 0.1232, "aspect": 4.5},
+      {"lat": 52.303, "lng": 1.0716, "halfHeight": 0.0796, "aspect": 7},
+      {"lat": 52.1213, "lng": 1.0161, "halfHeight": 0.0569, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Surrey",
+    "boxes": [
+      {"lat": 51.2407, "lng": -0.5137, "halfHeight": 0.1986, "aspect": 1},
+      {"lat": 51.2412, "lng": -0.4569, "halfHeight": 0.1327, "aspect": 2},
+      {"lat": 51.2256, "lng": -0.3138, "halfHeight": 0.1017, "aspect": 3},
+      {"lat": 51.2155, "lng": -0.3421, "halfHeight": 0.0851, "aspect": 4.5},
+      {"lat": 51.1972, "lng": -0.3527, "halfHeight": 0.0563, "aspect": 7},
+      {"lat": 51.1967, "lng": -0.3951, "halfHeight": 0.0429, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Swansea",
+    "boxes": [
+      {"lat": 51.6732, "lng": -3.9601, "halfHeight": 0.0763, "aspect": 1},
+      {"lat": 51.5996, "lng": -4.0982, "halfHeight": 0.0478, "aspect": 2},
+      {"lat": 51.596, "lng": -4.1292, "halfHeight": 0.0431, "aspect": 3},
+      {"lat": 51.6, "lng": -4.1401, "halfHeight": 0.0308, "aspect": 4.5},
+      {"lat": 51.6058, "lng": -4.1401, "halfHeight": 0.0201, "aspect": 7},
+      {"lat": 51.6076, "lng": -4.1438, "halfHeight": 0.0144, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Tipperary",
+    "boxes": [
+      {"lat": 52.545, "lng": -7.8928, "halfHeight": 0.2938, "aspect": 1},
+      {"lat": 52.4875, "lng": -7.8406, "halfHeight": 0.1852, "aspect": 2},
+      {"lat": 52.4824, "lng": -7.8406, "halfHeight": 0.1275, "aspect": 3},
+      {"lat": 52.4593, "lng": -7.8472, "halfHeight": 0.0865, "aspect": 4.5},
+      {"lat": 52.4658, "lng": -7.8819, "halfHeight": 0.0606, "aspect": 7},
+      {"lat": 52.4627, "lng": -7.8863, "halfHeight": 0.0428, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Torfaen",
+    "boxes": [
+      {"lat": 51.6771, "lng": -3.0223, "halfHeight": 0.0463, "aspect": 1},
+      {"lat": 51.705, "lng": -3.0432, "halfHeight": 0.026, "aspect": 2},
+      {"lat": 51.7054, "lng": -3.0471, "halfHeight": 0.02, "aspect": 3},
+      {"lat": 51.7006, "lng": -3.0419, "halfHeight": 0.0145, "aspect": 4.5},
+      {"lat": 51.6982, "lng": -3.0445, "halfHeight": 0.009, "aspect": 7},
+      {"lat": 51.696, "lng": -3.0445, "halfHeight": 0.0065, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Tyne and Wear",
+    "boxes": [
+      {"lat": 54.9675, "lng": -1.5607, "halfHeight": 0.1245, "aspect": 1},
+      {"lat": 54.9479, "lng": -1.5821, "halfHeight": 0.0871, "aspect": 2},
+      {"lat": 54.9405, "lng": -1.5821, "halfHeight": 0.068, "aspect": 3},
+      {"lat": 54.9322, "lng": -1.584, "halfHeight": 0.0489, "aspect": 4.5},
+      {"lat": 54.9236, "lng": -1.588, "halfHeight": 0.032, "aspect": 7},
+      {"lat": 54.9178, "lng": -1.588, "halfHeight": 0.0225, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Vale of Glamorgan",
+    "boxes": [
+      {"lat": 51.4449, "lng": -3.3722, "halfHeight": 0.0821, "aspect": 1},
+      {"lat": 51.4364, "lng": -3.3918, "halfHeight": 0.062, "aspect": 2},
+      {"lat": 51.4342, "lng": -3.3643, "halfHeight": 0.0502, "aspect": 3},
+      {"lat": 51.4291, "lng": -3.3448, "halfHeight": 0.038, "aspect": 4.5},
+      {"lat": 51.4274, "lng": -3.348, "halfHeight": 0.0254, "aspect": 7},
+      {"lat": 51.4175, "lng": -3.361, "halfHeight": 0.0186, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Warwickshire",
+    "boxes": [
+      {"lat": 52.2256, "lng": -1.5644, "halfHeight": 0.1904, "aspect": 1},
+      {"lat": 52.2554, "lng": -1.5804, "halfHeight": 0.1333, "aspect": 2},
+      {"lat": 52.2494, "lng": -1.5591, "halfHeight": 0.0969, "aspect": 3},
+      {"lat": 52.2321, "lng": -1.5758, "halfHeight": 0.0684, "aspect": 4.5},
+      {"lat": 52.2705, "lng": -1.5484, "halfHeight": 0.0457, "aspect": 7},
+      {"lat": 52.2641, "lng": -1.5484, "halfHeight": 0.0324, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Waterford",
+    "boxes": [
+      {"lat": 52.2335, "lng": -7.5715, "halfHeight": 0.1717, "aspect": 1},
+      {"lat": 52.2093, "lng": -7.5119, "halfHeight": 0.118, "aspect": 2},
+      {"lat": 52.1934, "lng": -7.4816, "halfHeight": 0.0891, "aspect": 3},
+      {"lat": 52.1778, "lng": -7.6587, "halfHeight": 0.0732, "aspect": 4.5},
+      {"lat": 52.1853, "lng": -7.5701, "halfHeight": 0.059, "aspect": 7},
+      {"lat": 52.1732, "lng": -7.6354, "halfHeight": 0.0474, "aspect": 10}
+    ]
+  },
+  {
+    "name": "West Dunbartonshire",
+    "boxes": [
+      {"lat": 55.9949, "lng": -4.5358, "halfHeight": 0.0621, "aspect": 1},
+      {"lat": 55.9688, "lng": -4.5096, "halfHeight": 0.0418, "aspect": 2},
+      {"lat": 55.9541, "lng": -4.457, "halfHeight": 0.0308, "aspect": 3},
+      {"lat": 55.9568, "lng": -4.4804, "halfHeight": 0.0247, "aspect": 4.5},
+      {"lat": 55.9616, "lng": -4.4804, "halfHeight": 0.0164, "aspect": 7},
+      {"lat": 55.9598, "lng": -4.4765, "halfHeight": 0.0112, "aspect": 10}
+    ]
+  },
+  {
+    "name": "West Lothian",
+    "boxes": [
+      {"lat": 55.8705, "lng": -3.5719, "halfHeight": 0.1191, "aspect": 1},
+      {"lat": 55.855, "lng": -3.5567, "halfHeight": 0.0745, "aspect": 2},
+      {"lat": 55.8545, "lng": -3.5516, "halfHeight": 0.0515, "aspect": 3},
+      {"lat": 55.8466, "lng": -3.5617, "halfHeight": 0.0365, "aspect": 4.5},
+      {"lat": 55.8513, "lng": -3.5651, "halfHeight": 0.024, "aspect": 7},
+      {"lat": 55.8538, "lng": -3.5651, "halfHeight": 0.0171, "aspect": 10}
+    ]
+  },
+  {
+    "name": "West Midlands",
+    "boxes": [
+      {"lat": 52.5155, "lng": -2.001, "halfHeight": 0.1246, "aspect": 1},
+      {"lat": 52.4941, "lng": -1.9412, "halfHeight": 0.0922, "aspect": 2},
+      {"lat": 52.4781, "lng": -1.9382, "halfHeight": 0.0653, "aspect": 3},
+      {"lat": 52.4786, "lng": -1.9487, "halfHeight": 0.0461, "aspect": 4.5},
+      {"lat": 52.4586, "lng": -1.9367, "halfHeight": 0.0309, "aspect": 7},
+      {"lat": 52.4087, "lng": -1.7084, "halfHeight": 0.0263, "aspect": 10}
+    ]
+  },
+  {
+    "name": "West Sussex",
+    "boxes": [
+      {"lat": 50.9403, "lng": -0.5734, "halfHeight": 0.2076, "aspect": 1},
+      {"lat": 50.9314, "lng": -0.5483, "halfHeight": 0.1585, "aspect": 2},
+      {"lat": 50.9685, "lng": -0.4942, "halfHeight": 0.122, "aspect": 3},
+      {"lat": 50.957, "lng": -0.5077, "halfHeight": 0.0848, "aspect": 4.5},
+      {"lat": 50.9339, "lng": -0.5193, "halfHeight": 0.056, "aspect": 7},
+      {"lat": 51.0203, "lng": -0.4343, "halfHeight": 0.0423, "aspect": 10}
+    ]
+  },
+  {
+    "name": "West Yorkshire",
+    "boxes": [
+      {"lat": 53.754, "lng": -1.7117, "halfHeight": 0.2489, "aspect": 1},
+      {"lat": 53.7248, "lng": -1.6651, "halfHeight": 0.1762, "aspect": 2},
+      {"lat": 53.7502, "lng": -1.6762, "halfHeight": 0.1228, "aspect": 3},
+      {"lat": 53.7406, "lng": -1.7114, "halfHeight": 0.0899, "aspect": 4.5},
+      {"lat": 53.7202, "lng": -1.7152, "halfHeight": 0.0581, "aspect": 7},
+      {"lat": 53.7094, "lng": -1.7077, "halfHeight": 0.0424, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Westmeath",
+    "boxes": [
+      {"lat": 53.5612, "lng": -7.3342, "halfHeight": 0.1963, "aspect": 1},
+      {"lat": 53.5327, "lng": -7.3346, "halfHeight": 0.1272, "aspect": 2},
+      {"lat": 53.4712, "lng": -7.5963, "halfHeight": 0.1035, "aspect": 3},
+      {"lat": 53.4803, "lng": -7.5626, "halfHeight": 0.0851, "aspect": 4.5},
+      {"lat": 53.4934, "lng": -7.515, "halfHeight": 0.0618, "aspect": 7},
+      {"lat": 53.501, "lng": -7.5031, "halfHeight": 0.0447, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Wexford",
+    "boxes": [
+      {"lat": 52.4996, "lng": -6.5647, "halfHeight": 0.1988, "aspect": 1},
+      {"lat": 52.5424, "lng": -6.5257, "halfHeight": 0.1219, "aspect": 2},
+      {"lat": 52.5622, "lng": -6.507, "halfHeight": 0.088, "aspect": 3},
+      {"lat": 52.5766, "lng": -6.4935, "halfHeight": 0.062, "aspect": 4.5},
+      {"lat": 52.4406, "lng": -6.6325, "halfHeight": 0.0404, "aspect": 7},
+      {"lat": 52.4033, "lng": -6.6596, "halfHeight": 0.0294, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Wicklow",
+    "boxes": [
+      {"lat": 53.024, "lng": -6.3089, "halfHeight": 0.2331, "aspect": 1},
+      {"lat": 52.9924, "lng": -6.353, "halfHeight": 0.1492, "aspect": 2},
+      {"lat": 52.9863, "lng": -6.3885, "halfHeight": 0.1121, "aspect": 3},
+      {"lat": 52.9905, "lng": -6.3947, "halfHeight": 0.0762, "aspect": 4.5},
+      {"lat": 52.9901, "lng": -6.407, "halfHeight": 0.0499, "aspect": 7},
+      {"lat": 52.9588, "lng": -6.3761, "halfHeight": 0.0357, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Wiltshire",
+    "boxes": [
+      {"lat": 51.4128, "lng": -1.952, "halfHeight": 0.2754, "aspect": 1},
+      {"lat": 51.4012, "lng": -1.9241, "halfHeight": 0.1714, "aspect": 2},
+      {"lat": 51.4006, "lng": -1.9207, "halfHeight": 0.1188, "aspect": 3},
+      {"lat": 51.3447, "lng": -1.9055, "halfHeight": 0.0795, "aspect": 4.5},
+      {"lat": 51.3417, "lng": -1.8987, "halfHeight": 0.0526, "aspect": 7},
+      {"lat": 51.3506, "lng": -1.9055, "halfHeight": 0.0375, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Worcestershire",
+    "boxes": [
+      {"lat": 52.2499, "lng": -2.1525, "halfHeight": 0.2081, "aspect": 1},
+      {"lat": 52.2856, "lng": -2.1642, "halfHeight": 0.1221, "aspect": 2},
+      {"lat": 52.3059, "lng": -2.1832, "halfHeight": 0.0877, "aspect": 3},
+      {"lat": 52.3155, "lng": -2.1763, "halfHeight": 0.0648, "aspect": 4.5},
+      {"lat": 52.2973, "lng": -2.2282, "halfHeight": 0.0458, "aspect": 7},
+      {"lat": 52.3018, "lng": -2.2143, "halfHeight": 0.0336, "aspect": 10}
+    ]
+  },
+  {
+    "name": "Wrexham",
+    "boxes": [
+      {"lat": 53.0176, "lng": -2.9885, "halfHeight": 0.1064, "aspect": 1},
+      {"lat": 53.0235, "lng": -2.9981, "halfHeight": 0.0643, "aspect": 2},
+      {"lat": 53.0196, "lng": -2.9981, "halfHeight": 0.0455, "aspect": 3},
+      {"lat": 53.0141, "lng": -2.9981, "halfHeight": 0.0311, "aspect": 4.5},
+      {"lat": 52.9676, "lng": -2.9322, "halfHeight": 0.023, "aspect": 7},
+      {"lat": 52.9643, "lng": -2.9217, "halfHeight": 0.0171, "aspect": 10}
+    ]
+  }
+]

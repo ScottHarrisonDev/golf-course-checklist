@@ -1,0 +1,44 @@
+/* County name labels on the map (see county-labels.ts). Leaflet builds these at runtime,
+   so this is a plain global stylesheet. */
+
+.county-label-marker {
+  /* Decorative: taps go straight through to the map (and pins sit above, in their own
+     pane). */
+  pointer-events: none;
+}
+
+.county-label-marker--hidden {
+  display: none;
+}
+
+.county-label {
+  display: block;
+  color: var(--color-slate);
+  font-family: var(--font-family);
+  font-size: 0.6875rem; /* 11px */
+  font-weight: var(--font-weight-body);
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  /* A thin white halo, so the name reads on any county colour and over boundaries. */
+  text-shadow:
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 2px #fff;
+  user-select: none;
+}
+
+/* Off-screen copy used only to measure label sizes. */
+.county-label-measure {
+  position: absolute;
+  top: 0;
+  left: -10000px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.county-label-measure .county-label {
+  display: inline-block;
+}
