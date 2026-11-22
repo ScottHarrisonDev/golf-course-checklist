@@ -133,6 +133,38 @@ not in this project) and a small Node script with no dependencies.
    spot on the coast or in the right county, and the five Kent courses sat where
    expected in Kent.
 
+## County labels
+
+The county names on the map are page text placed over the artwork by
+`src/components/CourseMap/county-labels.ts`, not part of the SVG. Where each label goes
+and how much room it has comes from `src/data/county-labels.json`.
+
+For each county the file gives six **boxes**: for each width:height ratio (`aspect`) of
+1, 2, 3, 4.5, 7 and 10, the largest box of that shape that fits inside the county
+(coast and borders included), as its centre (`lat`, `lng`) and half its height
+(`halfHeight`, in degrees of longitude, which in Web Mercator is the same number of
+pixels everywhere at a given zoom). A box rather than a circle, because a name is much
+wider than it is tall: "HIGHLAND" fits in Highland about a zoom level sooner this way.
+At run time each label measures its text (on one line, or on two for names of several
+words), picks the box and line break that let it show at the lowest zoom, and shows
+only from that zoom upwards, with a few pixels of padding around the text.
+
+The file was made by a one-off Node script with no dependencies, kept outside the
+repository:
+
+1. Read every county `<path>` (and its `<title>`) from `uk.svg`. The paths are only
+   `M`, relative `l` pairs and `z`, so they parse into rings of SVG points directly.
+2. For each aspect, squash the x coordinates by that aspect and find the **pole of
+   inaccessibility** with the polylabel algorithm (Mapbox's quadtree search, to 0.1 SVG
+   units), measuring distance to the boundary as the larger of the x and y distances
+   instead of the straight-line distance. In the squashed shape that finds the largest
+   square that fits; stretched back, it is the largest box of that aspect. Points are
+   inside or outside by the even-odd rule, so islands and holes count.
+3. Convert the centre back to lat/lng with the projection formulas above, divide the
+   half-size by 100 to get degrees, round to 4 decimal places, and sort by name.
+
+Rerun it whenever the county shapes in `uk.svg` change.
+
 ## Remaking or editing it
 
 - **Small changes** (a colour, a stroke width): edit the SVG by hand. Colours and
